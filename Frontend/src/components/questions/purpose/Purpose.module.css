@@ -1,0 +1,84 @@
+.containerPurpose {
+    height: 920px;
+    width: 100%;
+    padding: 20px 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.titleCuestion {
+    width: auto;
+    height: auto;
+    padding: 20px 15px;
+}
+
+.titleCuestion h3 {
+    color: rgb(76, 76, 76);
+    font-size: 45px;
+    font-weight: 600;
+    letter-spacing: -2px;
+}
+
+
+.containerButtons {
+    height: auto;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 15px;
+    padding-left: 15px;
+}
+
+.containerButtons button {
+    height: 50px;
+    width: 200px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    background-color: #6940ff;
+    color: aliceblue;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* Estilos para mobile ----------------------------------------------------------*/
+
+@media only screen and (max-width: 680px) {
+
+    .containerPurpose {
+        height: 600px;
+        width: 100%;
+        padding: 20px 0px;
+    }
+    
+    .titleCuestion {
+        padding: 0;
+        margin: 40px 0px;
+    }
+    
+    .titleCuestion h3 {
+        font-size: 26px;
+        font-weight: 600;
+        text-align: center;
+    }
+    
+    
+    .containerButtons {
+        justify-content: center;
+        gap: 15px;
+        padding-left: 0;
+    }
+    
+    .containerButtons button {
+        height: auto;
+        width: 140px;
+        padding: 8px 16px;
+        font-size: 16px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        border-radius: 4px;
+        box-shadow: 0px 0px 40px rgba(0, 0, 0, .5);
+    }
+}

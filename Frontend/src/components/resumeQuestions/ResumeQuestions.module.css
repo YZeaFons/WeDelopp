@@ -1,0 +1,313 @@
+.containerResumen {
+    height: auto;
+    width: 100%;
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.containerResumen .containerAnswers {
+    width: 100%;
+    height: max-content;
+}
+
+.containerAnswers .Answers .containerTitle{
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+}
+
+.containerAnswers .Answers .containerTitle .TitleQuestion{
+    background-color: #343434;
+    width:50%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+.TitleQuestion span{
+    color: aliceblue;
+    font-weight: 700;
+}
+
+.containerAnswers .Answers .containerTitle .TitleAnswer{
+    background-color: #343434;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0px;
+}
+
+.TitleAnswer span{
+    color: aliceblue;
+    font-weight: 700;
+}
+
+
+.containerAnswers .Answers .containerTitle .TitleEdit{
+    background-color: #343434;
+    width: 10%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0px;
+}
+
+.TitleEdit span{
+    color: aliceblue;
+    font-weight: 700;
+}
+
+.containerAnswers .Answers {
+    height: 100%;
+}
+
+.containerAnswers .Answers .Question{
+    height: 70px;
+    display: flex;
+    align-items: center; 
+    
+}
+
+.containerQuestionAndIcon {
+    border-top: 1px solid rgb(166, 166, 166);
+    border-right: 1px solid rgb(166, 166, 166);
+    background-color: #eeeff1;
+    width:50%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+.containerQuestion {
+    border-top: 1px solid rgb(166, 166, 166);
+    border-right: 1px solid rgb(166, 166, 166);
+    background-color: #eeeff1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0px;
+}
+
+.containerButton {
+    border-top: 1px solid rgb(166, 166, 166);
+    background-color: #eeeff1;
+    width: 10%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0px;
+}
+
+.question {
+    font-size: 15px;
+    color: #797979;
+    
+}
+
+.answer {
+    font-size: 15px;
+    font-weight: 600;
+    color: #1f1f1f; 
+}
+
+.button {
+    border: none;
+    font-size: 25px;
+    color: #6940ff;
+    cursor: pointer;
+}
+
+.containerButtonResumen {
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerButtonResumen button{
+    height: 40px;
+    width: 150px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    background-color: #6940ff;
+    color: aliceblue;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+/* Estilos para mobile ----------------------------------------------------------*/
+
+@media only screen and (max-width: 680px) {
+    .containerResumen {
+        padding: 0px;
+        padding-bottom: 30px;
+        margin-top: 40px;
+        background-color: #EDEDED;
+    }
+    
+    .containerResumen .containerAnswers {
+        width: 100%;
+        height: max-content;
+        border: 1px solid #343434;
+    }
+    
+    .containerAnswers .Answers .containerTitle{
+        width: 100%;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+    }
+    
+    .containerAnswers .Answers .containerTitle .TitleQuestion{
+        background-color: #343434;
+        width: 42%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+        padding-left: 10px;
+        margin: 15px 0px;
+    }
+    
+    .TitleQuestion span{
+        font-size: 18px;
+        font-weight: 600;
+    }
+    
+    .containerAnswers .Answers .containerTitle .TitleAnswer{
+        background-color: #343434;
+        width: 42%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 15px 0px;
+    }
+    
+    .TitleAnswer span{
+        font-size: 18px;
+        font-weight: 600;
+    }
+    
+    
+    .containerAnswers .Answers .containerTitle .TitleEdit{
+        background-color: #343434;
+        width: 16%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 15px 0px;
+        border-left: 1px solid rgb(166, 166, 166);
+
+    }
+    
+    .TitleEdit span{
+        font-size: 18px;
+        font-weight: 600;
+    }
+    
+    .containerAnswers .Answers {
+        height: 100%;
+    }
+    
+    .containerAnswers .Answers .Question{
+        width: 100%;
+        height: 70px;
+        display: flex;
+        align-items: center; 
+    }
+    
+    .containerQuestionAndIcon {
+        width: 42%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 10px;
+        background-color: #eeeff1;
+    }
+
+    .icono {
+        display: none;
+    }
+    
+    .containerQuestion {
+        border-top: 1px solid rgb(166, 166, 166);
+        border-right: 1px solid rgb(166, 166, 166);
+        background-color: #eeeff1; 
+        width: 42%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 15px 0px;
+    }
+    
+    .containerButton {
+        border-top: 1px solid rgb(166, 166, 166);
+        background-color: #eeeff1;
+        width: 16%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 15px 0px;
+    }
+    
+    .question {
+        font-size: 15px;
+        color: #797979;
+        
+    }
+    
+    .answer {
+        font-size: 15px;
+        font-weight: 600;
+        color: #1f1f1f; 
+    }
+    
+    .button {
+        border: none;
+        font-size: 25px;
+        color: #6940ff;
+        cursor: pointer;
+    }
+    
+    .containerButtonResumen {
+        height: auto;
+        width: 100%;
+        margin-top: 30px;
+
+    }
+    
+    .containerButtonResumen button{
+        height: auto;
+        width: 140px;
+        padding: 8px 16px;
+        font-size: 16px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        border-radius: 4px;
+        box-shadow: 0px 0px 40px rgba(0, 0, 0, .5);
+    }
+    
+    
+}

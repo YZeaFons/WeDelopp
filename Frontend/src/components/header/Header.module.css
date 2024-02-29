@@ -1,0 +1,123 @@
+.HeaderContainer {
+  background-image: url("../images/fondo.jpg");
+  background-attachment: fixed;
+  height: 900px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.titleContainer {
+  height: 50%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding-left: 100px;
+}
+
+.h1 {
+  color: aliceblue;
+  width: 100%;
+  height: max-content;
+  font-size: 75px;
+  letter-spacing: -4px;
+  margin-bottom: 10px;
+  line-height: 5rem;
+}
+
+
+
+.ImgContainer {
+  height: 50%;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imgResponsive {
+  width: 650px;
+}
+
+.customshapedividerbottom1707406615 {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  line-height: 0;
+  transform: rotate(180deg);
+  z-index: 50;
+}
+
+.customshapedividerbottom1707406615 .svg {
+  display: block;
+  width: calc(145% + 1.3px);
+  height: 191px;
+}
+
+.customshapedividerbottom1707406615 .shapefill {
+  fill: aliceblue;
+}
+
+
+
+
+   /* Estilos para dispositivos móviles ------------------------------- */
+
+   @media only screen and (max-width: 680px) {
+
+    .HeaderContainer {
+      height: auto;
+      background-position: right;
+      flex-direction: column;
+      justify-content: start;
+      align-items: center;
+      position: relative;
+      padding: 120px 20px;
+      padding-bottom: 60px;
+    }
+    
+    .titleContainer {
+      height: auto;
+      width: 100%;
+      justify-content: center;
+      align-items: start;
+      padding-left: 0;
+    }
+    
+    .h1 {
+      width: 75%;
+      height: auto;
+      font-size: 44px;
+      word-spacing: -2px;
+      letter-spacing: .5px;
+      line-height: 45px;
+      margin-bottom: 5px;
+    }
+    
+.titleContainer img {
+  width: 60%;
+}
+
+    .ImgContainer {
+      height: auto;
+      width: 100%;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+    
+    .imgResponsive {
+      width: 90%;
+      position: relative;
+      left: 40px;
+      top: -60px;
+    }
+
+  
+  }

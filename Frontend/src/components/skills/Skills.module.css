@@ -1,0 +1,136 @@
+.containerSkills {
+    background-image: url('../images/fondo.jpg');
+    background-attachment: fixed;
+    height: 100%;
+    padding: 30px 15px;
+}
+
+
+.containerTitle {
+    padding: 30px 15px;
+    text-align: center;
+}
+
+.containerTitle .title{
+    font-size: 50px; 
+    font-weight: 600;
+    color: aliceblue;
+    letter-spacing: -2px;
+}
+
+.containerCards {
+    height: max-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 40px;
+    gap: 50px;
+}
+
+.containerCards .boxCard{
+    background-color: aliceblue;
+    width: 250px;
+    height: 350px;
+    border-radius: 15px;
+}
+
+.containerCards .boxCard .icon{
+    text-align: center;
+    font-size: 50px;
+    margin-top: 20px;
+}
+
+.containerCards .titleCard{ 
+    margin: 5px 10px;
+    padding: 10px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.containerCards .titleCard h4{
+    text-align: center;
+    font-size: 20px;
+    color: #484848;
+    margin: 5px;
+    font-weight: 500;
+}
+
+.containerCards .titleCard p{
+    width: 90%;
+    text-align:center;
+    font-size: 15px;
+    color: #484848;   
+}
+
+
+
+ /* Estilos para dispositivos móviles ------------------------------- */
+
+ @media only screen and (max-width: 680px) {
+
+    .containerSkills {
+        background-position: right;
+        height: auto;
+        padding: 40px 0px;
+    }
+    
+    
+    .containerTitle {
+        padding: 0;
+        margin-bottom: 20px;
+    }
+    
+    .containerTitle .title{
+        font-size: 26px; 
+        font-weight: 500;
+        letter-spacing: -.5px;
+    }
+    
+    .containerCards {
+        flex-wrap: nowrap;
+        justify-content: start;
+        margin: 0;
+        padding: 20px;
+        gap: 0px;
+        overflow-x: scroll;
+    }
+    
+    .containerCards .boxCard{
+        width: auto;
+        height: auto;
+        padding: 20px;
+        margin: 0px 10px;
+        border-radius: 8px;
+        background-color: rgba(256,256,256,.8);
+    }
+    
+    .containerCards .boxCard .icon{
+        font-size: 32px;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .containerCards .titleCard{ 
+        margin: 0;
+        padding: 0;
+    }
+    
+    .containerCards .titleCard h4{
+        font-size: 24px;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+    
+    .containerCards .titleCard p{
+        width: 240px;
+        font-size: 18px;  
+        letter-spacing: 1px;
+        line-height: 24px;
+        text-align: left;
+        padding: 0;
+        margin-top: 10px;
+    }
+
+}

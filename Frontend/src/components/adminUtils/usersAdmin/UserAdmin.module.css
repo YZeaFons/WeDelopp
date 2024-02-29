@@ -1,0 +1,81 @@
+.containerCreateProject {
+    background-image: url('/images/createProject.jpg');
+    background-size: cover;
+    height: 920px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 0px;
+    
+}
+
+.containerCreateProject .flyerWebDevelop {
+    background-color: #2F61E4;
+    width: 30%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flyerWebDevelop .containerImage {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+.containerCreateProject .form {
+    background-color: rgba(211, 211, 211, 0.972);
+    width: 30%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+}
+
+.form .titleProject {
+    text-align: center;
+    padding: 15px;
+}
+
+.form .titleProject h3 {
+    font-size: 40px;
+    font-weight: 400;
+    color: #393939;
+}
+
+form label {
+    font-size: 15px;
+    text-align: start;
+    margin: 3px;
+}
+
+form input {
+    border: none;
+    height: 40px;
+    margin: 5px 0px;
+    padding: 10px;
+}
+
+.form .containerButton {
+    display: flex;
+    justify-content: center;
+}
+
+.containerButton button {
+    width: 20%;
+    height: 40px;
+    border: none;
+    background-color: #2F61E4;
+    color: aliceblue;
+}
+
+.buttonBack {
+    color: rgb(255, 255, 255);
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    cursor: pointer;
+}

@@ -1,0 +1,106 @@
+.detailsContainer {
+  width: 100%;
+  height: 950px;
+  display: flex;
+  position: relative;
+  z-index: 2000;
+}
+
+.containerImage {
+  background-image: url('./../../../public/images/hola.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: 20%;
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}.containerImage img {
+  width: 600px;
+  height: 390px;
+  position: absolute;
+  bottom: 30%;
+  left: 46%;
+  border-radius: 6px;
+  Clip-path: inset(0px 87px 0px 0px);
+  opacity: 80%;
+  
+}
+
+.containerInfo {
+  background-color: #F0F2F9;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 30px;
+  padding: 150px 100px;
+}
+
+
+.containerTitle {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 30px;
+}.containerTitle h2 {
+  font-size: 50px;
+  letter-spacing: -1px;
+}.containerTitle span {
+  font-size: 20px;
+  padding-left: 3px;
+  color: rgb(79, 79, 79);
+}
+
+.containerDescription {
+  width: 80%;
+}.containerDescription p {
+  font-size: 17px;
+  line-height: 30px;
+  color: rgb(109, 109, 109);
+}
+
+
+.buttonsContainer {
+  height: 30%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}.buttonsContainer .button1 {
+  border: 1px solid rgb(199, 198, 198);
+  background-color: aliceblue;
+    border: none;
+    height: 50px;
+    width: 150px;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: rgb(105, 105, 105);
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}.buttonsContainer .button2 {
+  background-color: #7A0CC3;
+  color: aliceblue;
+  border: none;
+  height: 50px;
+  width: 150px;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+
+.containerSpinner {
+  border: 1px solid black;
+  width: 100%;
+  background-image: url('../../../public/images/fondoSpinnerDetailProject.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}

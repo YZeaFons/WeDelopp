@@ -1,0 +1,144 @@
+.container {
+    width: calc(50% - 10px);
+    height: 200px;
+    max-height: 260px;
+    padding: 20px;
+    margin: 5px;
+    border-radius: 4px;
+    border: 1px solid rgb(219, 219, 219);
+    background: #fff;
+}
+
+.firstRow {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+    padding: 15px 0px;
+}
+
+.image {
+    width: 45px;
+    height: auto;
+    padding: 0;
+    margin: 0;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.firstRow .containerNameAndDate {
+    text-align: start;
+    width: max-content;
+    width: 50%;
+}
+
+.containerNameAndDate h4{
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: -1px;
+    margin-bottom: 4px;
+}
+
+.containerNameAndDate p{
+    font-size: 13px;
+    color: #646464;
+}
+
+.firstRow .containerStarts {
+    height: 50px;
+    width: 50%;
+    display: flex;
+    align-items:center ;
+    justify-content: end;
+}
+
+.containerStarts p {
+    font-size: 25px;
+    text-align: end;
+}
+
+.containerComment p{
+    font-size: 18px;
+    font-weight: 300;
+    text-align: start;
+    color: #a5a5a5;
+    line-height: 23px;
+}
+
+
+
+ /* Estilos para mobile ---------------------------------------------------------- */
+
+ @media only screen and (max-width: 680px) {
+
+    .container {
+        width: auto;
+        height: auto;
+        max-height: none;
+        padding: 20px;
+        margin: 0px 10px;
+        border-radius: 4px;
+        border: 1px solid rgb(219, 219, 219);
+        background: #fff;
+    }
+    
+    .firstRow {
+        width: auto;
+        height: auto;
+        flex-wrap: wrap;
+        justify-content: start;
+        gap: 0px;
+        padding: 0px;
+    }
+    
+    .image {
+        width: auto;
+        text-align: left;
+    }
+
+    .image img {
+        width: 45px;
+        height: auto;
+    }
+    
+    .firstRow .containerNameAndDate {
+        text-align: start;
+        width: auto;
+        margin-left: 4px;
+    }
+    
+    .containerNameAndDate h4{
+        width: auto;
+        font-size: 20px;
+        font-weight: 600;
+        letter-spacing: -.5px;
+        margin: 4px 0px;
+    }
+    
+    .firstRow .containerStarts {
+        width: 100%;
+        height: auto;
+        justify-content: start;
+        margin-top: 20px;
+    }
+    
+    .containerStarts p {
+        font-size: 22px;
+        font-size: 500;
+        text-align: start;
+    }
+    
+    .containerComment p{
+        width: 240px;
+        font-size: 17px;
+        font-weight: 500;
+        margin-top: 15px;
+    }
+ }

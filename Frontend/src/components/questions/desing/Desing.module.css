@@ -1,0 +1,174 @@
+.containerDesing {
+  height: auto;
+    width: 100%;
+    padding: 20px 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.titleCuestion {
+text-align: center;
+  width: auto;
+  height: auto;
+  padding: 20px 15px;
+}
+
+.containerDesing .titleCuestion h3 {
+  color: rgb(76, 76, 76);
+  font-size:45px;
+  font-weight: 600;
+  letter-spacing: -2px;
+}
+
+.ContainerTemplate {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+
+/* contenedor Cards */
+
+.containerCards {
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  gap: 25px;
+}
+
+.boxCard {
+  width: 300px;
+  height: 200px;
+  cursor: pointer;
+  position: relative;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.boxCard .containerImage img {
+  border: 1px solid rgb(226, 226, 226);
+  width: 300px;
+}
+
+.containerResumen {
+  width: 300px;
+  height: 200px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  backdrop-filter: blur(15px);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.containerResumen:hover {
+  opacity: 100%;
+}
+
+.containerResumen h4 {
+  font-size: 25px;
+  font-weight: 400;
+  color: aliceblue;
+  letter-spacing: -1px;
+}
+
+.containerResumen span {
+  font-size: 30px;
+  color: aliceblue;
+  letter-spacing: -1px;
+  color: #FCC922;
+}
+
+
+.containerTextArea {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.containerTextArea h4 {
+  color: rgb(76, 76, 76);
+  font-size:40px;
+  font-weight: 600;
+  letter-spacing: -2px;
+}
+
+.containerTextArea textarea {
+  width: 92%;
+}
+
+.containerTextArea button {
+  height: 50px;
+    width: 200px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    background-color: #6940ff;
+    color: aliceblue;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+/* Estilos para mobile ----------------------------------------------------------*/
+
+@media only screen and (max-width: 680px) {
+
+  .containerDesing {
+      height: auto;
+      padding: 20px 0px;
+  }
+  
+  .titleCuestion {
+    padding: 0;
+    margin: 40px 0px;
+}
+
+.containerDesing .titleCuestion h3 {
+    font-size: 26px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: -1px;
+}
+  
+  .containerCards {
+    overflow-x: scroll;
+    flex-wrap: nowrap;
+    justify-content: start;
+    gap: 20px;
+  }
+  
+  .boxCard {
+    width: 300px;
+    height: 200px;
+  }
+  
+  .containerTextArea h4 {
+    font-size: 26px;
+    text-align: center;
+    letter-spacing: -1px;
+  }
+  
+  .containerTextArea button {
+    height: auto;
+    width: 140px;
+    padding: 8px 16px;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 4px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, .5);
+  }
+  
+  
+
+}

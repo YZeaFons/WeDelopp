@@ -1,0 +1,105 @@
+.searBar {
+    background-color: #F5F5F5;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    height: 900px;
+    width: 20%;
+}
+
+.searBar .containerTitle {
+    background-color: #2F61E4;
+    padding: 30px 20px;
+}
+
+.searBar .containerButtons {
+    height: 80%;
+    padding: 20px;
+}
+
+.searBar .buttons3 label {
+    display: block;
+    margin: 10px 0px;
+    font-size: 13px;
+    color: #2F61E4;
+}
+
+.searBar .buttons3 input {
+    height: 40px;
+    width: 80%;
+    margin: 5px 0px;
+    background-color: #EAEDF1;
+    border: none;
+    padding: 0px 10px;
+}
+
+.searBar .buttons3 button {
+    height: 40px;
+    width: 20%;
+    cursor: pointer;
+    background-color: #2F61E4;
+    color: #F5F5F5;
+    border: none;
+}
+
+.searBar .buttons1 {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0px;
+    height: auto;
+}
+
+.buttons1 label {
+    margin: 10px 0px;
+    font-size: 13px;
+    color: #2F61E4;
+}
+
+.buttons1 button {
+    background-color: #F5F5F5;
+    color: #414141;
+    border: none;
+    cursor: pointer;
+    margin: 10px 20px;
+    font-size: 20px;
+    font-weight: 200;
+    text-align: start;
+}
+
+
+.buttons1 button a {
+    text-decoration: none;
+    color: rgb(108, 108, 108);
+    text-align: start;
+}
+
+.searBar .buttons2 {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0px;
+    height: auto;
+}
+
+.buttons2 label {
+    margin: 10px 0px;
+    font-size: 13px;
+    color: #2F61E4;
+}
+
+.buttons2 button {
+    background-color: #F5F5F5;
+    color: #414141;
+    border: none;
+    cursor: pointer;
+    margin: 10px 20px;
+    font-size: 20px;
+    font-weight: 200;
+    text-align: start;
+}
+
+
+.buttons1 button a {
+    text-decoration: none;
+    color: rgb(108, 108, 108);
+    text-align: start;
+}

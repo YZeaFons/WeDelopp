@@ -1,0 +1,45 @@
+/* NotFound.module.css */
+.notFound {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+
+   /* img{
+    width: 35%;
+   }  ESTO NOSE HACE!!!!!!!!!  */
+  
+
+   /* h1 {
+    color: #9e2525;
+    font-size: 3rem;
+    margin-bottom: 20px;
+  } */
+/* p {
+    font-size: 1.2rem;
+    color: #2e2727;
+  } */
+
+/* PD DE agustin -.- */
+  
+  .button {
+    background-color: #132d5c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 6px;
+  }
+  
+  .button:hover {
+    background-color: #4e8baf;
+  }
+  

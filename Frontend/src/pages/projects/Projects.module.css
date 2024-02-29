@@ -1,0 +1,61 @@
+.projectsContainer {
+    background-image: url('./../../../public/images/fondoProject.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size:cover;
+    width: 100%;
+    height: auto;
+    padding-top: 300px;
+}
+
+.Title {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-bottom: 100px;
+}
+
+.containerProject {
+    background-color: #F0F2F9;
+    padding-top: 50px;
+}
+
+
+.projectsContainer .filtersContainer {
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.filtersContainer select {
+    width: 15%;
+    height: 40px;
+}
+
+
+.proyectos {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 70px 0px;
+    gap: 30px;
+}
+
+.selectOptions{
+    margin-top: 50px;
+}
+
+.selectContainer{
+    margin-top: 50px;
+    padding-left: 30%;
+    padding-right: 30%;
+}
+
+.paginate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

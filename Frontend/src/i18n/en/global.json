@@ -1,0 +1,342 @@
+{
+  "NavBar": {
+    "Home": "Home",
+    "Quote": {
+      "title": "Quote",
+      "alertNotLogged": "You must log in to quote"
+    },
+    "Projects": "Projects",
+    "ContactUs": "Contact Us",
+    "Language": "Language"
+  },
+
+  "Header": {
+    "title": "If you can imagine it, we can develop it",
+    "change": {
+      "word1": "develop it.",
+      "word2": "make it happen.",
+      "word3": "bring it to life.",
+      "word4": "build it."
+    }
+  },
+
+  "LoginButton": {
+    "title": "Login",
+    "bannedAlert": "You have been banned. Please contact support.",
+    "bannedAlertContact": "Contact Support",
+    "bannedWhy": "Why do I have this issue?"
+  },
+
+  "UserAccount": {
+    "role": "Role",
+    "creationDate": "Account creation date",
+    "SignOut": "Log out",
+    "adminPanel": "Admin panel"
+  },
+
+  "AboutUs": {
+    "title": "About Us",
+    "description": "At WeDevelop, we don't just create websites, we weave digital stories. From our humble beginnings in 2022, we've passionately dedicated ourselves to crafting exceptional online experiences that captivate, inspire, and connect."
+  },
+
+  "WhyWedevelop": {
+    "title": "Why WeDevelop?",
+    "section1": {
+      "title": "Experience",
+      "description": "With expertise in website development, we excel in design, programming, and optimization. Our user-centric approach and up-to-date knowledge ensure efficient and aesthetically pleasing websites."
+    },
+    "section2": {
+      "title": "Creativity",
+      "description": "We fuse innovative ideas to breathe life into unique projects. Our knack for the art of creativity is reflected in original designs and imaginative solutions that exceed expectations, adding a distinctive touch to each creation."
+    },
+    "section3": {
+      "title": "Attention to Detail",
+      "description": "Every project is meticulously overseen to guarantee precision and quality. Our dedication is reflected in flawless outcomes, where each element is finely tuned to deliver maximum excellence."
+    },
+    "section4": {
+      "title": "Professionalism",
+      "description": "We raise the bar of professionalism in every task we undertake. With a rigorous approach, integrity, and solid expertise, we deliver exceptional services. Our commitment to excellence and professional ethics translates into satisfying results."
+    },
+    "section5": {
+      "title": "Unique Designs",
+      "description": "We create unique designs that captivate and stand out. Our passion for originality shines through in every project, blending aesthetic innovation to deliver visually stunning solutions with a lasting impression."
+    },
+    "section6": {
+      "title": "Efficiency",
+      "description": "We prioritize efficiency in every phase of our work. From planning to execution, our streamlined processes ensure swift and precise results, delivering high-quality projects in record time."
+    }
+  },
+
+  "Highlights": {
+    "title": "Highlights",
+    "ProjectsButton": "View All Projects"
+  },
+
+  "QuoteHome": {
+    "title": "Get Your Budget Estimate Instantly!",
+    "button": "Get a Quote Now"
+  },
+
+  "RatingHome": {
+    "rating": "Rating",
+    "comments": "Total Comments",
+    "NotBuyer": "You must get a buy to review",
+    "RatingForm": {
+      "message": "Leave Your Review :",
+      "button": "Send Review!",
+      "alertTitle": "Your review has been submitted!"
+    },
+    "viewAll": "All reviews",
+    "ReviewsAll": {
+      "error1": "Error getting reviews:",
+      "error2": "Error when obtaining reviews by rating:",
+      "title": "Reviews and comments",
+      "subTitle": "Filter by stars:",
+      "all": "All reviews",
+      "5stars": "5 stars",
+      "4stars": "4 stars",
+      "3stars": "3 stars",
+      "2stars": "2 stars",
+      "1star": "1 star",
+      "orderBy": "Order by:",
+      "recent": "Most recent",
+      "oldest": "Oldest",
+      "paginatePrev": "Previous",
+      "paginatePage": "Page",
+      "paginateOf": "of",
+      "paginateNext": "Next",
+      "noReviewsStar": "No reviews found with that rating"
+    }
+  },
+
+  "Footer": {
+    "bydeveloper": "By developers",
+    "Navigation": {
+      "title": "Routes",
+      "Home": "Home",
+      "Quote": "Quote",
+      "Projects": "Projects",
+      "ContactUs": "Contact Us"
+    },
+    "ContactUs": "Contact Us",
+    "Newsletter": {
+      "title": "Subscribe to Our Newsletter",
+      "placeholder": "Enter your email address",
+      "button": "Subscribe"
+    },
+    "Copyright": "©WeDevelop All Rights Reserved 2024"
+  },
+
+  "QuoteQuestions": {
+    "Section1": "What will be the purpose of your project?",
+    "Section2": {
+      "title": "Will your site consume any API or external database?",
+      "input": "Specify your api or database to use",
+      "save": "Save"
+    },
+    "Section3": {
+      "title": "Estimated number of products to publish?",
+      "answer1": "under 10",
+      "answer2": "10 to 20",
+      "answer3": "Over 20"
+    },
+    "Section4": {
+      "title": "Do you require integration with external platforms or services, such as social networks or online payment systems?",
+      "answer1": "Yes",
+      "whichOne": {
+        "title": "Which one?",
+        "input": "Specify the platforms or services you require",
+        "save": "Continue"
+      },
+      "answer3": "Previous question"
+    },
+    "Section5": {
+      "title": "Are there any specific legal requirements or regulations that must be met when developing your website?",
+      "answer1": "Yes",
+      "whichOne": {
+        "title": "Which one?",
+        "input": "Specify which ones you require",
+        "save": "Continue"
+      },
+      "answer3": "Previous question"
+    },
+    "Section6": {
+      "title": "How many visits per month do you estimate your site will have?",
+      "answer1": "5 to 10",
+      "answer2": "10 to 20",
+      "answer3": "+ 20"
+    },
+    "Section7": {
+      "title": "How many languages do you need your website to support?",
+      "answer1": "Single",
+      "answer2": "Bilingual",
+      "answer3": "Multilingual"
+    },
+    "Section8": {
+      "title": "Select a Templates",
+      "subtitle": "Don't like any template?",
+      "input": "Write your ideas here",
+      "continue": "Continue"
+    },
+    "Section9": {
+      "title": "Will your website require support?",
+      "answer1": {
+        "title": "Requires Support",
+        "subtitle": "Support options",
+        "op1": "Weekly",
+        "op2": "Monthly",
+        "op3": "Quarterly",
+        "op4": "Others"
+      },
+      "answer2": "No Support Required"
+    },
+    "Section10": {
+      "title": "Does your site have any requirements not covered by our question routing?",
+      "input": "Specify the requirements here",
+      "continue": "Continue"
+    },
+    "Summary": {
+      "questions": "Questions",
+      "answers": "Answers",
+      "edit": "Edit",
+      "plans": "Select Plans"
+    }
+  },
+
+
+
+  "plansTitle":{
+    "title": "Plans and pricing",
+    "subtitle": "Choose the right plan for your website and we will develop it"
+  },
+  "plans": {
+    "BasicPlan": {
+      "title": "Basic",
+      "description": "For those looking to start their online presence in a simple yet effective way.",
+      "sec1": "Registration with other platforms.",
+      "sec2": "Custom domain.",
+      "sec3": "Templates predefined.",
+      "sec4": "Fields per form.",
+      "sec5": "Personalized email.",
+      "sec6": "SSL certificate.",
+      "sec7": "Priority access to new features and updates.",
+      "sec8": "Email automations.",
+      "sec9": "Multi-site dashboard & admins.",
+      "sec10": "live chat.",
+      "sec11": "AI personalized live chat.",
+      "showMore": "Show more",
+      "showLess": "Show less",
+      "perProject": "/per project",
+      "button": "Get Started"
+    },
+    "BusinessPlan": {
+      "title": "Business",
+      "description": "Designed to enhance efficiency, security, and interactivity in your digital presence.",
+      "sec1": "SSL certificate.",
+      "sec2": "Registration with other platforms.",
+      "sec3": "Custom domain.",
+      "sec4": "Priority access to new features and updates.",
+      "sec5": "Email automations.",
+      "sec6": "Live chat",
+      "sec7": "Fields per form.",
+      "sec8": "Personalized website.",
+      "sec9": "Multi-site dashboard & admins",
+      "sec10": "Personalized email",
+      "sec11": "AI personalized live chat",
+      "showMore": "Show more",
+      "showLess": "Show less",
+      "perProject": "/per project",
+      "button": "Get Started"
+    },
+    "EnterprisePlan": {
+      "title": "Enterprise",
+      "description": "Unlock your company's digital potential with features designed for growth.",
+      "sec1": "SSL certificate.",
+      "sec2": "Registration with other platforms.",
+      "sec3": "Custom domain.",
+      "sec4": "Priority access to new features and updates.",
+      "sec5": "Personalized website.",
+      "sec6": "Personalized email.",
+      "sec7": "Email automations.",
+      "sec8": "Multi-site dashboard & admins",
+      "sec9": "live chat.",
+      "sec10": "AI personalized live chat.",
+      "sec11": "Advanced Analytics Tools.",
+      "showMore": "Show more",
+      "showLess": "Show less",
+      "perProject": "/per project",
+      "button": "Get Started"
+    }
+  },
+
+  "PayStatus": {
+    "title": "Payment Status",
+    "number": "Payment number:",
+    "service": "Service Name:",
+    "type": "Payment Type:",
+    "amount": "Payment Amount:",
+    "creation": "Creation Date:",
+    "email": "Email:",
+    "backHome": "Back to Home"
+  },
+
+  "ContactUsPage": {
+    "alert": {
+      "title": "Message has been sent!!",
+      "description": "We will contact you very soon."
+    },
+    "bydevelopers": "By developers",
+    "title": "Contact Us",
+    "name": "Name",
+    "email": "Email Address",
+    "description": "Write your message here...",
+    "submit": "Submit"
+  },
+
+  "Projects": {
+    "notFound": "Project not found",
+    "cards": "Category:",
+    "paginate": {
+      "prev": "Prev",
+      "next": "Next"
+    },
+    "projectsDetails": {
+      "title": "Category:",
+      "back": "Back Projects",
+      "quote": "Get a Quote"
+    },
+    "projectsSelect": {
+      "categories": {
+        "E-commerce": "E-commerce",
+        "Tourism": "Tourism",
+        "Health": "Health",
+        "Landing Page": "Landing Page",
+        "Social Network": "Social Network",
+        "Portfolio": "Portfolio",
+        "Entertainment": "Entertainment"
+      }
+    },
+    "projectsDescription": {
+      "categories": {
+        "E-commerce": "An e-commerce website provides users with a platform to explore, select, and purchase a wide variety of products and services online. Users can browse product categories, search for specific items, view product details such as descriptions, prices, and availability, and complete secure transactions using online payment methods. Additionally, the platform may include features such as product recommendations, shopping carts, order tracking, and account customization options for a personalized and convenient shopping experience.",
+        "Tourism": "A tourism website provides users with detailed information about tourist destinations, activities, accommodations, transportation, and other travel-related services. Users can explore popular destinations, read traveler reviews and recommendations, plan itineraries, book flights and accommodations, and get practical tips for their travels. Additionally, the website may offer inspiring content such as photos and videos of scenic locations, unique experiences, and local events to help users find inspiration for their next trip.",
+        "Health": "A health website provides users with reliable information and resources related to health, wellness, and personal care. Users can access informative articles, expert advice, health tracking tools, and resources for self-care and disease management. Additionally, the website may offer online services such as virtual medical consultations, personalized wellness programs, and access to support communities for those facing specific health challenges.",
+        "Landing Page": "A landing page is a web page designed specifically to convert visitors into potential leads or customers. It can have a singular focus and a clear call to action, such as downloading a resource, signing up for a webinar, or purchasing a product. The landing page is designed to be concise, persuasive, and relevant to the target audience, with an attractive design and compelling content that highlights the benefits and features of the product or service offered.",
+        "Social Network": "An online social network offers users a platform to connect, interact, and share content with friends, family, and online communities. Users can create personal profiles, add friends, post status updates, share photos and videos, and participate in groups and events. The social network may include additional features such as instant messaging, live streaming, and content editing tools to encourage engagement and interaction among users.",
+        "Portfolio": "A portfolio website provides users with a platform to showcase and highlight their work, skills, and professional experience. Users can create customized profiles, upload samples of their work such as design projects, photographs, illustrations, writings, or software development projects, and share details about their education, work experience, and achievements. The website is designed to be visually appealing and easy to navigate, with a design that highlights the user's work and presents it in a professional and compelling manner.",
+        "Entertainment": "An entertainment website offers users access to a wide range of multimedia content, such as movies, TV shows, music, games, podcasts, and entertainment news. Users can explore content catalogs, watch trailers, listen to music samples, play games online, read reviews and critiques, and participate in discussions and online communities related to entertainment. The website may include additional features such as personalized recommendations, curated playlists, and live events to keep users engaged and entertained."
+      }
+    }
+  },
+
+  "NotFoundPage": {
+    "part1": "404 - Page Not Found",
+    "part2": "You might be here because:",
+    "part3": "• The page has moved",
+    "part4": " • The page no longer exists",
+    "part5": "You were looking for your kittens and got lost",
+    "part6": "• You like 404 pages",
+    "part7": "Dont cry! just click the button below to fix it",
+    "button": "Secure zone"
+  }
+}

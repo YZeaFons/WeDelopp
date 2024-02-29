@@ -1,0 +1,83 @@
+.quoteContainer {
+    background-image: url('../images/fondo.jpg');
+    background-attachment: fixed;
+    height: 500px;
+    padding: 30px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.containerTitle {
+    padding: 30px 15px;
+    text-align: center;
+}
+
+.containerTitle .quoteStartProyect {
+    font-size: 50px; 
+    font-weight: 600;
+    letter-spacing: -2px;;
+    color: aliceblue;
+}
+
+.containerButton { 
+    width: 100%;
+    text-align: center;
+}
+
+.containerButton .quoteButton{
+    width: 300px;
+    height: 50px;
+    border-radius: 15px;
+    border: none;
+}
+
+.containerButton .quoteButton a{
+   text-decoration: none;
+   font-size: 20px;
+   color: #6940FF;
+}
+
+
+
+
+/* Estilos para mobile ----------------------------------------------------------*/
+
+@media only screen and (max-width: 680px) {
+
+    .quoteContainer {
+        background-position: right;
+        height: auto;
+        padding: 80px 20px;
+    }
+    
+    .containerTitle {
+        width: 60%;
+        padding: 0;
+        margin: 0px auto;
+    }
+    
+    .containerTitle .quoteStartProyect {
+        font-size: 26px; 
+        font-weight: 600;
+        letter-spacing: -.5px;
+    }
+    
+    .containerButton .quoteButton{
+        width: auto;
+        height: auto;
+        padding: 6px 16px;
+        margin-top: 30px;
+        background: rgba(256, 256, 256, .8);
+        border: 1px solid #6940FF;
+        border-radius: 6px;
+        box-shadow: 0px 0px 40px rgba(256, 256, 256, .6);
+    }
+    
+    .containerButton .quoteButton a{
+       font-size: 16px;
+       font-weight: 600;
+       color: #6940FF;
+    }
+}

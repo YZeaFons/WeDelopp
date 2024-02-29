@@ -1,0 +1,154 @@
+.containerExtraRequeriments {
+    height: 920px;
+    width: 100%;
+    padding: 20px 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.containerExtraRequeriments .titleCuestion {
+    width: auto;
+    height: auto;
+    padding: 20px 15px;
+    
+}
+
+.containerExtraRequeriments .titleCuestion h3 {
+    color: rgb(76, 76, 76);
+    font-size:45px;
+    font-weight: 600;
+    letter-spacing: -1px;
+}
+
+.ExtraRequerimentsContainer {
+    width: auto;
+    display: flex;
+    justify-content:start;
+}
+
+.ExtraRequerimentsContainer .ExtraRequerimentsOpcionOne{
+    display: flex;
+    gap: 15px;
+    padding-left: 15px;
+}
+
+.ExtraRequerimentsContainer .ExtraRequerimentsOpcionOne .button{
+    height: 50px;
+    width: 200px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    background-color: #6940ff;
+    color: aliceblue;
+    border: none;
+    cursor: pointer;
+}
+
+.ExtraRequerimentsTwo {
+    width: 100%;
+    height: auto;
+    display: flex;
+    gap: 15px;
+    padding-left: 15px;
+}
+
+
+.ExtraRequerimentsTwo .ExtraRequerimentsTextArea {
+    padding-left: 15px;
+    font-size: 18px;
+    height: 200px;
+    width: 80%;
+    border: 1px solid rgb(202, 202, 202);
+}
+
+.coontainerButton {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.ExtraRequerimentsTwo button{
+    height: 50px;
+    width: 200px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    background-color: #6940ff;
+    color: aliceblue;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* Estilos para mobile ----------------------------------------------------------*/
+
+@media only screen and (max-width: 680px) {
+    .containerExtraRequeriments {
+        height: auto;
+        padding: 20px 0px;
+    }
+    
+    .containerExtraRequeriments .titleCuestion {
+        padding: 0;
+        margin: 40px 0px;
+    }
+    
+    .containerExtraRequeriments .titleCuestion h3 {
+        font-size: 26px;
+        text-align: center;
+    }
+    
+    .ExtraRequerimentsContainer {
+        width: auto;
+        display: flex;
+    }
+    
+    .ExtraRequerimentsContainer .ExtraRequerimentsOpcionOne{
+        justify-content: center;
+        padding-left: 0px;
+        width: 100%;
+    }
+    
+    .ExtraRequerimentsContainer .ExtraRequerimentsOpcionOne .button{
+        height: auto;
+        width: 140px;
+        padding: 8px 16px;
+        font-size: 16px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        border-radius: 4px;
+        box-shadow: 0px 0px 40px rgba(0, 0, 0, .5);
+    }
+    
+    .ExtraRequerimentsTwo {
+        flex-direction: column;
+        padding-left: 0px;
+    }
+    
+    
+    .ExtraRequerimentsTwo .ExtraRequerimentsTextArea {
+        font-size: 16px;
+        height: auto;
+        width: 100%;
+        padding: 8px 7px;
+    }
+    
+    .coontainerButton {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 10px;
+    }
+    
+    .ExtraRequerimentsTwo button{
+        height: auto;
+        width: 140px;
+        padding: 8px 16px;
+        font-size: 16px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        border-radius: 4px;
+        box-shadow: 0px 0px 40px rgba(0, 0, 0, .5);
+    }
+}

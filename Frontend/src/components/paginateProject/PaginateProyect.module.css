@@ -1,0 +1,12 @@
+.Buttons {
+    margin: 15px 30px;
+    font-size: 17px;
+    width: 170px;
+    height: 50px;
+    background-color: #232323;
+    color: aliceblue;
+    border: none;
+    border-radius: 15px;
+    padding: 10px;
+    cursor: pointer;
+}

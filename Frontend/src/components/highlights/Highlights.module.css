@@ -1,0 +1,77 @@
+.carouselcontainer {
+    background-color: aliceblue;
+    height: 100%;
+    padding: 30px 15px;
+}
+
+.containerTitle {
+    padding: 30px 15px;
+    text-align: center;
+}
+
+.containerTitle h2 {
+    font-size: 50px; 
+    font-weight: 700;
+    letter-spacing: -2px;;
+    color: #6940ff;
+    text-align: center;
+}
+
+.containerCarrusel {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+
+.carouselStyles {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+    width: 60%;
+    height: max-content; 
+    margin: 20px 20px;
+}
+
+.buttonContainer {
+    width: auto;
+    margin:50px auto;
+}
+
+
+
+
+/* Estilos para mobile ----------------------------------------------------------*/
+
+@media only screen and (max-width: 680px) {
+
+    .carouselcontainer {
+        padding: 40px 20px;
+    }
+    
+    .containerTitle {
+        padding: 0;
+    }
+    
+    .containerTitle h2 {
+        font-size: 26px; 
+        font-weight: 600;
+        letter-spacing: -.5px;
+        color: #494949;
+    }
+    
+    .containerCarrusel {
+        margin: 40px 0;
+    }
+    
+    .carouselStyles {
+        width: 100%;
+        margin: 0px;
+    }
+
+    .buttonContainer {
+        margin-top: 70px;
+    }
+}
+

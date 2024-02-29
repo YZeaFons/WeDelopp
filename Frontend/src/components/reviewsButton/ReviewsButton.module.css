@@ -1,0 +1,36 @@
+.boton {
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    padding: 8px 16px;
+    margin: 20px 0px;
+    border-radius: 4px;
+    border: none;
+    background: #6940ff;
+    cursor: pointer;
+    transition: .3s all;
+}
+
+.boton:hover {
+    font-size: 19px;
+}
+
+
+
+
+/* Estilos para mobile ----------------------------------------------------------*/
+
+@media only screen and (max-width: 680px) {
+
+    .boton {
+        font-size: 16px;
+        margin: 20px 0px;
+        margin-top: 40px;
+        box-shadow: 0px 0px 40px rgba(0, 0, 0, .5);
+
+    }
+    
+    .boton:hover {
+        font-size: 16px;
+    }
+}

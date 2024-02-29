@@ -1,0 +1,39 @@
+.link {
+    text-decoration: none;
+}
+
+.container {
+    background-color: #232323;
+    width: 100%;
+    height: max-content;
+    border: 1px solid rgb(195, 195, 195);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.302);
+    
+}
+
+.container .img {
+    width: 500px;
+    height: 250px;
+}
+
+.container .containerTitle {
+    background-color: #232323;
+    height: 80px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.containerTitle h2 {
+    font-size: 20px;
+    font-weight: 400;
+    color: rgb(203, 203, 203);
+}
+
+.containerTitle h5 {
+    font-weight: 200;
+    color: #d450fc;
+    font-size: 15px;
+}

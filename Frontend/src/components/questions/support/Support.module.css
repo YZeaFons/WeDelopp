@@ -1,0 +1,187 @@
+.containerSupport {
+  height: 920px;
+  width: 100%;
+  padding: 20px 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.titleCuestion {
+  width: auto;
+  height: auto;
+  padding: 20px 15px;
+}
+
+.containerSupport .titleCuestion h3 {
+  color: rgb(76, 76, 76);
+  font-size: 45px;
+  font-weight: 600;
+  letter-spacing: -2px;
+}
+
+.containerImages {
+  width: 100%;
+  margin: 20px 0px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.imageContainer {
+  margin: 15px 15px;
+  width: 450px;
+  position: relative;
+  display: inline-block;
+  transition: .5s;
+  cursor: pointer;
+}
+
+.image {
+  max-width: 450px;
+  height: auto;
+}
+
+
+.containerIcon .smallImage {
+  position: absolute;
+  bottom: 100px;
+  left: 0;
+  font-size: 100px;
+}
+
+
+.imageContainer:hover {
+  transform: scale(1.03);
+}
+
+.imageContainer .title {
+  margin: 20px 0px;
+  padding: 15px;
+  text-align: center;
+}
+
+.imageContainer .title h4 {
+  color: #646464;
+  font-size: 30px;
+}
+
+.containerOptions {
+  width: auto;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 15px;
+  gap: 15px;
+}
+
+.options-list {
+  display: flex;
+    gap: 15px;
+    padding-left: 15px;
+}
+
+.options-list button {
+  height: 50px;
+    width: 200px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    background-color: blueviolet;
+    color: aliceblue;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+
+/* Estilos para mobile ----------------------------------------------------------*/
+
+@media only screen and (max-width: 680px) {
+
+  .containerSupport {
+    height: auto;
+    padding: 20px 0px;
+  }
+  
+  .titleCuestion {
+    padding: 0;
+    margin: 40px 0px;
+}
+
+.containerSupport .titleCuestion h3 {
+    font-size: 26px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: -1px;
+}
+  
+  .containerImages {
+    width: 100%;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .imageContainer {
+    margin: 20px 0px;
+    width: 70%;
+    position: relative;
+    display: inline-block;
+    transition: .5s;
+    cursor: pointer;
+  }
+  
+  .image {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  
+  .containerIcon .smallImage {
+    position: absolute;
+    bottom: 100px;
+    left: 0;
+    font-size: 40px;
+  }
+  
+  .imageContainer .title {
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  .imageContainer .title h4 {
+    font-size: 26px;
+  }
+  
+  .containerOptions {
+    width: 100%;
+    padding: 0px;
+    gap: 15px;
+    justify-content: center;
+  }
+  
+  .options-list {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      padding-left: 0px;
+  }
+  
+  .options-list button {
+    height: auto;
+    width: 140px;
+    padding: 8px 16px;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 4px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, .5);
+    margin-top: 7px;
+  }
+  
+
+
+}

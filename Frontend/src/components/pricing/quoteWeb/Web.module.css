@@ -1,0 +1,128 @@
+
+.containerCards {
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 15px;
+  }
+  
+  .cardBox {
+    background-color: #F3F3F3;
+    border-radius: 10px;
+    border: 1px solid #d3d3d3;
+    flex: 0 0 calc(32% - 20px);
+    margin-bottom: 20px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .containerTitleAndDescripcion {
+    padding-bottom: 30px;
+    width: 100%;
+  }
+  .containerTitleAndDescripcion h4{
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  
+  .containerTitleAndDescripcion p {
+    font-size: 17px;
+    font-weight: 400;
+    color: #9A9A9A;
+    line-height: 25px;
+  }
+  
+  
+  .containerPricingAndButton {
+    border-top: 1px solid #b5b5b5;
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .containerButtonPay {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .containerPricingAndButton .containerValue {
+    display: flex;
+    align-items: end;
+    gap: 10px;
+  }
+  
+  .containerPricingAndButton  .h4 {
+    font-size: 70px;
+  }
+  
+  .containerPricingAndButton  .p {
+    height: 40px;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  
+  .containerPricingAndButton .buttonPay{
+    height: 55px;
+    width: 100%;
+    border-radius: 6px;
+    border: none;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: #6940FF;
+    color: aliceblue;
+    letter-spacing: 1px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .containerIncludes {
+    width: 380px;
+  }
+  
+  .containerIncludes .specifications{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-top: 15px;
+  }
+  
+  .containerIncludes p{
+    display: flex;
+    gap: 15px;
+    font-size: 17px;
+    font-weight: 500;
+    color: black;
+  }
+  
+  .containerIncludes .icon {
+    color: #B7B7B7;
+    font-size: 20px;
+  }
+  
+  .containerButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0px;
+  }
+  
+  .containerButton .buttonSeeMore {
+    border: none;
+    background-color: transparent;
+    height: 30px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    font-size: 17px;
+    font-weight: 500;
+    color: #989898;
+    cursor: pointer;
+  }
+  

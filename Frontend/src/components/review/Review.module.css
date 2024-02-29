@@ -1,0 +1,91 @@
+.container {
+    background-color: #F0F8FF;
+    width: auto;
+    height: auto;
+    padding: 40px 0px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reviewRatingAndContainer {
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cardContainer {
+    width: 80%;
+    height: auto;
+    padding:0px;
+    margin: 20px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.containerTitle {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+}
+
+.container h3 {
+    font-weight: 200;
+}
+
+.container .buttonLogin {
+    background-color: transparent;
+    color: #6940FF;
+    border: none;
+    font-size: 18px;
+    font-weight: 200;
+    cursor: pointer;
+}
+
+.H3andButton {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+
+
+/* Estilos para mobile ----------------------------------------------------------*/
+
+@media only screen and (max-width: 680px) {
+    .container {
+        padding: 40px 20px;
+        padding-bottom: 60px;
+    }
+    
+    .reviewRatingAndContainer {
+        width: 100%;
+    }
+    
+    .cardContainer {
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: start;
+        overflow-x: scroll;
+    }
+
+    .H3andButton {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .H3andButton h3 {
+        font-weight: 18px;
+        font-weight: 400;
+    }
+}

@@ -1,0 +1,343 @@
+{
+  "NavBar": {
+    "Home": "Inicio",
+    "Quote": {
+      "title": "Cotizar",
+      "alertNotLogged": "Debes iniciar sesión para cotizar"
+    },
+    "Projects": "Proyectos",
+    "ContactUs": "Contactanos",
+    "Language": "idioma"
+  },
+
+  "Header": {
+    "title": "Si puedes imaginarlo, nosotros podemos desarrollarlo",
+    "change": {
+      "word1": "desarrollarlo.",
+      "word2": "hacer que suceda.",
+      "word3": "darle vida.",
+      "word4": "construirlo."
+    }
+  },
+
+  "LoginButton": {
+    "title": "Iniciar Sesion",
+    "register": "Registrarse",
+    "bannedAlert": "Has sido baneado. Por favor contacte al soporte.",
+    "bannedAlertContact": "Soporte de contacto",
+    "bannedWhy": "¿Por qué tengo este problema?"
+  },
+
+  "UserAccount": {
+    "role": "Rol",
+    "creationDate": "Fecha de creacion de la cuenta",
+    "SignOut": "Desconectarse",
+    "adminPanel": "Panel de administrador"
+  },
+
+  "AboutUs": {
+    "title": "Sobre nosotros",
+    "description": "En WeDevelop, no solo creamos sitios web, también tejemos historias digitales. Desde nuestros modestos comienzos en 2022, nos hemos dedicado con pasión a crear experiencias en línea excepcionales que cautivan, inspiran y conectan."
+  },
+
+  "WhyWedevelop": {
+    "title": "¿Por que WeDevelop?",
+    "section1": {
+      "title": "  Experiencia",
+      "description": "Con experiencia en la creación de sitios web, nos destacamos en diseño, programación y optimización. Nuestro enfoque centrado en el usuario y nuestro conocimiento actualizado garantizan sitios web eficientes y estéticamente agradables."
+    },
+    "section2": {
+      "title": "Creatividad",
+      "description": "Fusionamos ideas innovadoras para dar vida a proyectos únicos. Nuestra habilidad en el arte de la creatividad se refleja en diseños originales y soluciones imaginativas que superan las expectativas, añadiendo un toque distintivo a cada creación."
+    },
+    "section3": {
+      "title": "Atención al detalle",
+      "description": "Cada proyecto es cuidadosamente supervisado para garantizar precisión y calidad. Nuestra dedicación se refleja en resultados impecables, donde cada elemento está finamente afinado para brindar la máxima excelencia."
+    },
+    "section4": {
+      "title": "Profesionalismo",
+      "description": "Elevamos el nivel de profesionalismo en cada tarea que realizamos. Con un enfoque riguroso, integridad y experiencia sólida, brindamos servicios excepcionales. Nuestra dedicación a la excelencia y la ética profesional se traduce en resultados satisfactorios."
+    },
+    "section5": {
+      "title": "Diseños unicos",
+      "description": "Creamos diseños únicos que cautivan y destacan. Nuestra pasión por la originalidad se refleja en cada proyecto, fusionando la innovación estética para ofrecer soluciones visualmente impresionantes con una impresión duradera."
+    },
+    "section6": {
+      "title": "Eficiencia",
+      "description": "Priorizamos la eficiencia en cada fase de nuestro trabajo. Desde la planificación hasta la ejecución, nuestros procesos optimizados garantizan resultados rápidos y precisos, entregando proyectos de alta calidad en un tiempo récord."
+    }
+  },
+
+  "Highlights": {
+    "title": "Destacados",
+    "ProjectsButton": "Ver Todos Los Proyectos"
+  },
+
+  "QuoteHome": {
+    "title": "¡Calcula tu Presupuesto al Instante!",
+    "button": "Cotizar Ahora"
+  },
+
+  "RatingHome": {
+    "rating": "Calificación",
+    "comments": "reseñas Totales",
+    "NotBuyer": "Debes estar registrado para enviar una reseña",
+    "RatingForm": {
+      "message": "Deja tu reseña :",
+      "button": "Enviar Reseña!",
+      "alertTitle": "¡Su Reseña ha sido enviada!"
+    },
+    "viewAll": "Ver todas las reseñas",
+    "ReviewsAll": {
+      "error1": "Error al obtener reviews por rating:",
+      "error2": "Error al obtener reviews por rating:",
+      "title": "Comentarios y reseñas",
+      "subTitle": "Filtrar por estrellas:",
+      "all": "Todas las reseñas",
+      "5stars": "5 estrellas",
+      "4stars": "4 estrellas",
+      "3stars": "3 estrellas",
+      "2stars": "2 estrellas",
+      "1star": "1 estrellas",
+      "orderBy": "Ordenar de:",
+      "recent": "Más reciente",
+      "oldest": "Más antiguo",
+      "paginatePrev": "Anterior",
+      "paginatePage": "Página",
+      "paginateOf": "de",
+      "paginateNext": "Siguiente",
+      "noReviewsStar": "No se encontraron reseñas con esa calificación."
+    }
+  },
+
+  "Footer": {
+    "bydeveloper": "By developers",
+    "Navigation": {
+      "title": "Rutas",
+      "Home": "Inicio",
+      "Quote": "Cotizar",
+      "Projects": "Proyectos",
+      "ContactUs": "Contactanos"
+    },
+    "ContactUs": "Contactenos",
+    "Newsletter": {
+      "title": "Suscríbete a nuestro boletín",
+      "placeholder": "Ingresa tu correo electrónico",
+      "button": "Suscribirme"
+    },
+    "Copyright": "©WeDevelop Todos Los Derechos Reservados 2024"
+  },
+
+  "QuoteQuestions": {
+    "Section1": "¿Cuál será el propósito de su proyecto?",
+    "Section2": {
+      "title": "¿Su sitio consumirá alguna API o base de datos externa?",
+      "input": "Especifica tu API o base de datos a usar",
+      "save": "Guardar"
+    },
+    "Section3": {
+      "title": "¿Número estimado de productos para publicar?",
+      "answer1": "Menos de 10",
+      "answer2": "Entre 10 a 20",
+      "answer3": "Mas de 20"
+    },
+    "Section4": {
+      "title": "¿Requieres integración con plataformas o servicios externos, como redes sociales o sistemas de pago online?",
+      "answer1": "Si",
+      "whichOne": {
+        "title": "¿Cuales?",
+        "input": "Especifica las plataformas o servicios que requieres",
+        "save": "Continuar"
+      },
+      "answer3": "Pregunta anterior"
+    },
+    "Section5": {
+      "title": "¿Existe algún requisito legal o normativa específica que deba cumplirse en el desarrollo de su sitio web?",
+      "answer1": "Si",
+      "whichOne": {
+        "title": "¿Cuales?",
+        "input": "Especifica cuales requieres",
+        "save": "Continuar"
+      },
+      "answer3": "Pregunta anterior"
+    },
+    "Section6": {
+      "title": "¿Cuántas visitas estima que tendrá su sitio por mes?",
+      "answer1": "5 a 10",
+      "answer2": "10 a 20",
+      "answer3": "Mas de 20"
+    },
+    "Section7": {
+      "title": "¿Cuántos idiomas necesita que admita su sitio web?",
+      "answer1": "Un lenguaje",
+      "answer2": "Bilingüe",
+      "answer3": "Multilingüe"
+    },
+    "Section8": {
+      "title": "Seleccione una plantilla",
+      "subtitle": "¿No te gusto ninguna plantilla?",
+      "input": "Escribe aqui tus ideas",
+      "continue": "Continuar"
+    },
+    "Section9": {
+      "title": "¿Su sitio web requerirá soporte?",
+      "answer1": {
+        "title": "Requiere soporte",
+        "subtitle": "Opciones de soporte",
+        "op1": "Semanal",
+        "op2": "Mensual",
+        "op3": "Trimestral",
+        "op4": "Otros"
+      },
+      "answer2": "No requiere soporte"
+    },
+    "Section10": {
+      "title": "¿Su sitio tiene algún requisito que no esté cubierto por nuestro enrutamiento de preguntas?",
+      "input": "Especifica tus requisitos aqui",
+      "continue": "Continuar"
+    },
+    "Summary": {
+      "questions": "Preguntas",
+      "answers": "Respuestas",
+      "edit": "Editar",
+      "plans": "Seleccionar Plan"
+    }
+  },
+
+
+
+  "plansTitle":{
+    "title": "Planes y Precios",
+    "subtitle": "Elija el plan adecuado para su sitio web y nosotros lo desarrollaremos"
+  },
+  "plans": {
+    "BasicPlan": {
+      "title": "Basic",
+      "description": "Para quienes desean iniciar su presencia en Internet de forma sencilla pero eficaz.",
+      "sec1": "Registro en otras plataformas.",
+      "sec2": "Dominio personalizado.",
+      "sec3": "Plantillas predefinidas.",
+      "sec4": "Campos por formulario.",
+      "sec5": "Correo electrónico personalizado.",
+      "sec6": "Certificado SSL.",
+      "sec7": "Acceso prioritario a nuevas características y actualizaciones.",
+      "sec8": "Automatizaciones de correo electrónico.",
+      "sec9": "Panel y administradores multi-sitio.",
+      "sec10": "Chat en vivo.",
+      "sec11": "Chat en vivo personalizado con IA.",
+      "showMore": "Ver más",
+      "showLess": "Ver menos",
+      "perProject": "/por proyecto",
+      "button": "Comenzar"
+    },
+    "BusinessPlan": {
+      "title": "Business",
+      "description": "Diseñado para mejorar la eficacia, la seguridad y la interactividad de su presencia digital..",
+      "sec1": "Certificado SSL.",
+      "sec2": "Registro en otras plataformas.",
+      "sec3": "Dominio personalizado.",
+      "sec4": "Acceso prioritario a nuevas características y actualizaciones.",
+      "sec5": "Automatizaciones de correo electrónico.",
+      "sec6": "Chat en vivo.",
+      "sec7": "Campos por formulario.",
+      "sec8": "Sitio web personalizado.",
+      "sec9": "Panel y administradores multi-sitio.",
+      "sec10": "Correo electrónico personalizado.",
+      "sec11": "Chat en vivo personalizado con IA.",
+      "showMore": "Ver más",
+      "showLess": "Ver menos",
+      "perProject": "/por proyecto",
+      "button": "Comenzar"
+    },
+    "EnterprisePlan": {
+      "title": "Enterprise",
+      "description": "Libere el potencial digital de su empresa con funciones diseñadas para el crecimiento.",
+      "sec1": "Certificado SSL.",
+      "sec2": "Registro en otras plataformas.",
+      "sec3": "Dominio personalizado.",
+      "sec4": "Acceso prioritario a nuevas características y actualizaciones.",
+      "sec5": "Sitio web personalizado.",
+      "sec6": "Correo electrónico personalizado.",
+      "sec7": "Automatizaciones de correo electrónico.",
+      "sec8": "Panel y administradores multi-sitio.",
+      "sec9": "Chat en vivo.",
+      "sec10": "Chat en vivo personalizado con IA.",
+      "sec11": "Herramientas analíticas avanzadas.",
+      "showMore": "Ver más",
+      "showLess": "Ver menos",
+      "perProject": "/por proyecto",
+      "button": "Comenzar"
+    }
+  },
+
+  "PayStatus": {
+    "title": "Estado del pago",
+    "number": "Número de pago:",
+    "service": "Nombre del servicio:",
+    "type": "Tipo de pago:",
+    "amount": "Monto del pago:",
+    "creation": "Fecha de creación:",
+    "email": "Correo electrónico:",
+    "backHome": "Volver a inicio"
+  },
+
+  "ContactUsPage": {
+    "alert": {
+      "title": "¡Su mensaje ha sido enviado!",
+      "description": "Nos pondremos en contacto contigo a la brevedad"
+    },
+    "bydevelopers": "By developers",
+    "title": "Contactenos",
+    "name": "Nombre",
+    "email": "Correo electrónico",
+    "description": "Escribe tu mensaje aqui...",
+    "submit": "Enviar"
+  },
+
+  "Projects": {
+    "notFound": "Proyecto no encontrado",
+    "cards": "Categoria:",
+    "paginate": {
+      "prev": "Anterior",
+      "next": "Siguiente"
+    },
+    "projectsDetails": {
+      "title": "Categoria:",
+      "back": "Regresar a proyectos",
+      "quote": "Cotizar"
+    },
+    "projectsSelect": {
+      "categories": {
+        "E-commerce": "Comercio Electrónico",
+        "Tourism": "Turismo",
+        "Health": "Salud",
+        "Landing Page": "Página de Destino",
+        "Social Network": "Red Social",
+        "Portfolio": "Portafolio",
+        "Entertainment": "Entretenimiento"
+      }
+    },
+    "projectsDescription": {
+      "categories": {
+        "E-commerce": "Un sitio web de comercio electrónico ofrece a los usuarios una plataforma para explorar, seleccionar y comprar una amplia variedad de productos y servicios en línea. Los usuarios pueden navegar por categorías de productos, buscar artículos específicos, ver detalles de productos, como descripciones, precios y disponibilidad, y realizar transacciones seguras mediante métodos de pago en línea. Además, la plataforma puede incluir características como recomendaciones de productos, carrito de compras, seguimiento de pedidos y opciones de personalización de cuenta para una experiencia de compra personalizada y conveniente.",
+        "Tourism": "Un sitio web de turismo proporciona a los usuarios información detallada sobre destinos turísticos, actividades, alojamientos, transporte y otros servicios relacionados con los viajes. Los usuarios pueden explorar destinos populares, leer reseñas y recomendaciones de viajeros, planificar itinerarios, reservar vuelos y alojamientos, y obtener consejos prácticos para sus viajes. Además, el sitio web puede ofrecer contenido inspirador, como fotos y videos de lugares pintorescos, experiencias únicas y eventos locales, para ayudar a los usuarios a encontrar la inspiración para su próximo viaje.",
+        "Health": "Un sitio web de salud proporciona a los usuarios información confiable y recursos relacionados con la salud, el bienestar y el cuidado personal. Los usuarios pueden acceder a artículos informativos, consejos de expertos, herramientas de seguimiento de la salud, y recursos para el autocuidado y la gestión de enfermedades. Además, el sitio web puede ofrecer servicios en línea, como consultas médicas virtuales, programas de bienestar personalizados, y acceso a comunidades de apoyo para aquellos que enfrentan desafíos de salud específicos.",
+        "Landing Page": "Una página de destino es una página web diseñada específicamente para convertir visitantes en clientes potenciales o clientes. Puede tener un enfoque singular y una llamada a la acción clara, como la descarga de un recurso, la inscripción en un webinar, o la compra de un producto. La página de destino está diseñada para ser concisa, persuasiva y relevante para el público objetivo, con un diseño atractivo y un contenido convincente que resalte los beneficios y las características del producto o servicio ofrecido.",
+        "Social Network": "Una red social en línea ofrece a los usuarios una plataforma para conectarse, interactuar y compartir contenido con amigos, familiares y comunidades en línea. Los usuarios pueden crear perfiles personales, agregar amigos, publicar actualizaciones de estado, compartir fotos y videos, y participar en grupos y eventos. La red social puede incluir características adicionales como mensajería instantánea, transmisiones en vivo, y herramientas de edición de contenido para fomentar la participación y la interacción entre los usuarios.",
+        "Portfolio": "Un sitio web de portafolio proporciona a los usuarios una plataforma para exhibir y destacar su trabajo, habilidades y experiencia profesional. Los usuarios pueden crear perfiles personalizados, cargar muestras de su trabajo, como proyectos de diseño, fotografías, ilustraciones, escritos, o proyectos de desarrollo de software, y compartir detalles sobre su educación, experiencia laboral y logros. El sitio web está diseñado para ser visualmente atractivo y fácil de navegar, con un diseño que resalte el trabajo del usuario y lo presente de manera profesional y convincente.",
+        "Entertainment": "Es un sitio web de entretenimiento ofrece a los usuarios acceso a una amplia gama de contenido multimedia, como películas, series de televisión, música, juegos, podcasts y noticias de entretenimiento. Los usuarios pueden explorar catálogos de contenido, ver trailers, escuchar muestras de música, jugar juegos en línea, leer reseñas y críticas, y participar en discusiones y comunidades en línea relacionadas con el entretenimiento. El sitio web puede incluir características adicionales como recomendaciones personalizadas, listas de reproducción curadas, y eventos en vivo para mantener a los usuarios comprometidos y entretenidos.retenimiento"
+      }
+    }
+  },
+
+  "NotFoundPage": {
+    "part1": "404 - Pagina no encontrada",
+    "part2": "Puede que estés aquí porque:",
+    "part3": "• La pagina ha sido movida o eliminada",
+    "part4": "• La pagina ya no existe",
+    "part5": "Estabas buscando a tus gatitos y te perdiste",
+    "part6": "• Te gustan las paginas 404",
+    "part7": "¡No llores! simplemente haga clic en el botón de abajo para solucionarlo",
+    "button": "Zona segura"
+  }
+}

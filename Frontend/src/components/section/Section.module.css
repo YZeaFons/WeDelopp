@@ -1,0 +1,96 @@
+.containerSection {
+    width: 100%;
+    height: auto;
+    background-color: #EDEDED;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+}
+
+/* sideBar */
+
+.ContainerQuestions {
+    background-image: url('../../../public/images/fondoQuestion.jpg');
+    background-attachment: fixed;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.containerImg {
+    position: relative;
+    margin-top: 40px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.containerButtons {
+    position: fixed;
+    width: 17%;
+    height: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+}
+
+.containerButtons button {
+    width: 70px;
+    height: 50px;
+    border: none;
+    background-color: transparent;
+    font-size: 50px;
+    color: rgb(240, 248, 255);
+    cursor: pointer;
+}
+
+/* Cuestionario y Barra */
+
+.containerQuoteAndBar {
+    background-color: aliceblue;
+    height: auto;
+    width: 100%;
+}
+
+.containerBar {
+    border-bottom: 1px solid rgb(207, 207, 207);
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.containerQuote {
+    width: auto;
+    height: auto;
+}
+
+
+/* Estilos para mobile ----------------------------------------------------------*/
+
+@media only screen and (max-width: 680px) {
+   
+    .ContainerQuestions {
+        display: none;
+    }
+    
+    .containerQuoteAndBar {
+        height: calc(100vh - 50px);
+        padding: 0px 20px;
+        margin: 40px 0px;
+    }
+    
+    .containerQuote {
+        width: auto;
+        height: auto;
+    }
+    
+}

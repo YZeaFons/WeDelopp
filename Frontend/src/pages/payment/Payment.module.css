@@ -1,0 +1,169 @@
+.paymentContainer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 2000;
+}
+
+.containerBox {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+}
+
+.confirmation {
+    height:240px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../../../public/images/fondoPayment.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.confirmation .iconStatus {
+    font-size: 100px;
+}
+
+.confirmation span {
+    font-size: 30px;
+    font-weight: 500;
+    color: aliceblue;
+}
+
+.infoPayment {
+    border: 1px solid rgb(202, 202, 202);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background-color: rgb(253, 253, 253);
+    height: auto;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 40px;
+    margin: 30px;
+    gap: 50px;
+}
+
+.containerTitle h2 {
+    font-size: 50px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    text-align: center;
+}
+
+.info {
+    width: 100%;
+    height: auto;
+    font-size: 20px;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.info p{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.info span {
+    font-size: 17px;
+    font-weight: 500;
+    color: #ab1ddf;
+}
+
+
+.containerButton {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.containerButton button {
+    height: 40px;
+    width: 150px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    background-color: #6940ff;
+    color: aliceblue;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+/* Estilos para mobile ----------------------------------------------------------*/
+
+@media only screen and (max-width: 680px) {
+    
+    .confirmation {
+        height: 200px;
+    }
+    
+    .confirmation .iconStatus {
+        font-size: 38px;
+    }
+    
+    .confirmation span {
+        font-size: 22px;
+    }
+    
+    .infoPayment {
+        width: 84%;
+        padding: 40px 20px;
+        margin-top: 40px;
+        gap: 40px;
+        box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.3);
+    }
+    
+    .containerTitle h2 {
+        font-size: 26px;
+    }
+    
+    .info {
+        gap: 20px;
+    }
+    
+    .info p{
+        width: 100%;
+        font-size: 20px;
+        font-weight: 600;
+        color: rgba(0, 0, 0, 0.8);
+        text-align: center;
+    }
+    
+    .info span {
+        font-weight: 600;
+    }
+    
+    
+    .containerButton {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .containerButton button {
+        width: auto;
+        height: auto;
+        font-size: 16px;
+	    background: #6940ff;	
+	    color: #fff;
+   	    padding: 8px 16px;
+   	    margin: 20px 0px;
+    	border-radius: 4px;
+    	border: none;
+    	cursor: pointer;
+        box-shadow: 0px 0px 40px rgba(0, 0, 0, .5);
+    }
+}

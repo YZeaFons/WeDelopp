@@ -1,0 +1,49 @@
+.containerButtonUser {
+    background-color: #2f2f2f;
+    border-radius: 60px;
+    width: max-content;
+    height: 55px;
+    max-width: max-content;
+    max-height: max-content;
+    display: flex;
+    align-items: center;
+    padding: 0px 5px;
+    position: relative;
+}
+
+.containerButtonUser .containerNameAndButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; 
+}
+
+.containerButtonUser button {
+    padding: 0%;
+    margin: 0%;
+    font-size: 15px;
+    margin-left: 10px;
+    font-weight: 200;
+}
+
+.containerButtonUser img {
+    width: 45px;
+    border-radius: 50%;
+    border: 1px solid rgb(49, 49, 49);
+}
+
+.containerSpinner {
+    width: 150px;
+    display: flex;
+    justify-content: end;
+    padding-right: 5px;
+}
+
+.buttonLogin {
+    border:none;
+    background-color: transparent;
+    color: #6940FF;
+    font-size: 17px;
+    cursor: pointer;
+}
+

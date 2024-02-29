@@ -1,0 +1,181 @@
+.adminWindow {
+    background-color: #F5F5F5;
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+}
+
+.box .containerH2 {
+    height: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}.box .containerH2 p{
+    font-size: 20px;
+    font-weight: 500;
+    color: #2F61E4;
+}
+
+.containerPanel {
+    display: flex;
+    width: 99%;
+    height: max-content;
+    flex-direction: column;
+    background-color: #EAEDF1;
+    padding: 10px;
+}
+
+.containerPanel .containerTitle {
+    padding: 20px;
+    margin: 10px 10px;
+}
+
+.containerPanel .graphscontainer {
+    margin: 10px 10px;
+    height: max-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.box {
+    background-color: #F5F5F5;
+    width: 33%;
+    height: max-content;
+}
+
+.box .title {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    letter-spacing: -1px;
+}
+
+.box .title h3 {
+    font-size: 20px;
+    font-weight: 300;
+    color: aliceblue;
+}
+
+.adminWindow .titleAdminUser {
+    width: 98%;
+    text-align: center;
+}
+
+.adminWindow .titleAdminUser h2 {
+    font-size: 30px;
+    font-weight: 200;
+    text-align: start;
+    letter-spacing: -2px;
+    color: #707070;
+}
+.adminusers {
+    height: max-content;
+}
+
+
+
+.containerPanel .adminusers {
+    background-color: #F5F5F5;
+    height: 50%;
+    width: 99%;
+    margin: 10px 10px;
+}
+
+
+/* tabla user title */
+
+.adminusers .containerInfo {
+    background-color: #2F61E4;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    padding: 22px 10px;
+
+
+}
+
+.adminusers .containerInfo p {
+    width: 20%;
+    background-color: #2F61E4;
+    font-size: 20px;
+    font-weight: 300;
+    color: aliceblue;
+    text-align: center;
+
+}
+
+.adminusers .containerInfo .user {
+    width: 30%;
+    text-align: start;
+    padding-left: 20px;
+
+}
+
+.adminusers .containerInfo .email {
+    width: 30%;
+
+}
+
+.adminusers .containerInfo .role {
+    text-align: end;
+    padding-right: 20px;
+}
+
+/* tabla project title */
+
+.adminusers .containerInfoProject {
+    background-color: #2F61E4;
+    padding: 22px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.containerInfoProject p {
+    width: 33%;
+    font-size: 20px;
+    font-weight: 300;
+    color: aliceblue;
+}
+
+.containerInfoProject .image {
+    padding-left: 20px;
+}
+
+.containerInfoProject .name {
+    text-align: center;
+}
+
+.containerInfoProject .category {
+    text-align: end;
+    padding-right: 20px;
+}
+
+.adminusers .adminCards {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.adminusers .adminCards .titleContaine {
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.adminusers .adminCards .titleContaine h3 {
+    font-size: 30px;
+    font-weight: 200;
+    letter-spacing: -2px;
+    color: rgb(95, 95, 95);
+}
