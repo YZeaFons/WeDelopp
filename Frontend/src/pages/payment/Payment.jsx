@@ -22,8 +22,8 @@ export const Payment = () => {
         preference_id: preference_id
     }
     const searchPay = async () => {
-        const { data } = await axios('https://wedelopp-production.up.railway.app/successpayment', { params: obj })
-        const value = { id: data._id }
+        const response = await axios('https://wedelopp-production.up.railway.app/successpayment', { params: obj })
+        const value = { id: response.data._id }
         const search = await axios('https://wedelopp-production.up.railway.app/getpreference', { params: value })
         await setPaymentInfo(search.data)
     }
@@ -32,7 +32,7 @@ export const Payment = () => {
     }, [])
 
     const updateGlobalData = async () => {
-        const { data } = await userProvider.getUserByEmail(paymentInfo?.email)
+        const data = await userProvider.getUserByEmail(paymentInfo?.email)
         dispatch(loadUserData(data))
     }
     useEffect(() => {
