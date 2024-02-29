@@ -9,7 +9,6 @@
     "ContactUs": "Contact Us",
     "Language": "Language"
   },
-
   "Header": {
     "title": "If you can imagine it, we can develop it",
     "change": {
@@ -19,26 +18,22 @@
       "word4": "build it."
     }
   },
-
   "LoginButton": {
     "title": "Login",
     "bannedAlert": "You have been banned. Please contact support.",
     "bannedAlertContact": "Contact Support",
     "bannedWhy": "Why do I have this issue?"
   },
-
   "UserAccount": {
     "role": "Role",
     "creationDate": "Account creation date",
     "SignOut": "Log out",
     "adminPanel": "Admin panel"
   },
-
   "AboutUs": {
     "title": "About Us",
     "description": "At WeDevelop, we don't just create websites, we weave digital stories. From our humble beginnings in 2022, we've passionately dedicated ourselves to crafting exceptional online experiences that captivate, inspire, and connect."
   },
-
   "WhyWedevelop": {
     "title": "Why WeDevelop?",
     "section1": {
@@ -66,17 +61,14 @@
       "description": "We prioritize efficiency in every phase of our work. From planning to execution, our streamlined processes ensure swift and precise results, delivering high-quality projects in record time."
     }
   },
-
   "Highlights": {
     "title": "Highlights",
     "ProjectsButton": "View All Projects"
   },
-
   "QuoteHome": {
     "title": "Get Your Budget Estimate Instantly!",
     "button": "Get a Quote Now"
   },
-
   "RatingHome": {
     "rating": "Rating",
     "comments": "Total Comments",
@@ -108,7 +100,6 @@
       "noReviewsStar": "No reviews found with that rating"
     }
   },
-
   "Footer": {
     "bydeveloper": "By developers",
     "Navigation": {
@@ -126,7 +117,6 @@
     },
     "Copyright": "©WeDevelop All Rights Reserved 2024"
   },
-
   "QuoteQuestions": {
     "Section1": "What will be the purpose of your project?",
     "Section2": {
@@ -202,10 +192,7 @@
       "plans": "Select Plans"
     }
   },
-
-
-
-  "plansTitle":{
+  "plansTitle": {
     "title": "Plans and pricing",
     "subtitle": "Choose the right plan for your website and we will develop it"
   },
@@ -268,7 +255,6 @@
       "button": "Get Started"
     }
   },
-
   "PayStatus": {
     "title": "Payment Status",
     "number": "Payment number:",
@@ -279,7 +265,6 @@
     "email": "Email:",
     "backHome": "Back to Home"
   },
-
   "ContactUsPage": {
     "alert": {
       "title": "Message has been sent!!",
@@ -292,7 +277,6 @@
     "description": "Write your message here...",
     "submit": "Submit"
   },
-
   "Projects": {
     "notFound": "Project not found",
     "cards": "Category:",
@@ -328,7 +312,6 @@
       }
     }
   },
-
   "NotFoundPage": {
     "part1": "404 - Page Not Found",
     "part2": "You might be here because:",

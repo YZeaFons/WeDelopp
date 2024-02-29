@@ -40,7 +40,8 @@ export default function SearchBarAdmin({ setItemsToEdit, itemsToEdit, setDetailS
     const getSells = async () => {
         setDetailState('')
         const projectsResponse = await pricingProvider.getPreference()
-        setItemsToEdit(projectsResponse)
+        const sellsFiltered = projectsResponse.filter(item => item.payId)
+        setItemsToEdit(sellsFiltered)
     }
     const getPlanPrices = async () => {
         setDetailState('')

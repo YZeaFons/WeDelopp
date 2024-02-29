@@ -9,10 +9,13 @@ import projectsProvider from '../../utils/provider/projectsProvider/projectsProv
 import reviewsProvider from '../../utils/provider/reviewsProvider/reviewsProvider'
 import pricingProvider from '../../utils/provider/pricingProvider/pricingProvider'
 import SpinnerResumen from '../../components/spinners/spinnerResumen/SpinnerResumen'
+import { useSelector } from 'react-redux'
+import NotFound from '../notFound/NotFound'
 const AdminWindow = () => {
     const [itemsToEdit, setItemsToEdit] = useState([])
     const [detailState, setDetailState] = useState('')
     const [loading, setLoading] = useState(true);
+    const globalData = useSelector(state => state.userData)
 
     useEffect(() => {
 
@@ -141,235 +144,244 @@ const AdminWindow = () => {
     }
     console.log('esto es detail', detailState);
     return (
-        <div className={style.adminWindow}>
-            <SearchBarAdmin setItemsToEdit={setItemsToEdit} itemsToEdit={itemsToEdit} setDetailState={setDetailState} />
-            <div className={style.containerPanel}>
-                {
-                    itemsToEdit !== undefined && itemsToEdit[0]?.payId
-                        ? (
-                            <div className={style.graphscontainer}>
-                                <div className={style.box}>
-                                    <div className={style.title} style={{ backgroundColor: '#2F61E4' }}>
-                                        <h3>Total Amount</h3>
-                                    </div>
-                                    <div className={style.containerH2}>
-                                        <p>{sumTotPreference}</p>
-                                    </div>
-                                </div>
-                                <div className={style.box}>
-                                    <div className={style.title} style={{ backgroundColor: '#2F61E4' }}>
-                                        <h3>Quantity per type</h3>
-                                    </div>
-                                    <ResponsiveContainer width='100%' height={320} className={style.graph}>
-                                        <PieChart >
-                                            <Pie
-                                                dataKey='quantity'
-                                                data={pieGraphCountPreference}
-                                                innerRadius={60}
-                                                outerRadius={100}
-                                                fill='#82ca9d'
-                                                labelLine={false}
-                                                label={pieGraphCountPreference}
-                                            >
-                                                {pieGraphCountPreference.map((entry, index) => (
-                                                    <Cell key={`cell-${index}`} fill={piecountpreferencesColors[index % piecountpreferencesColors.length]} />
-                                                ))}
-                                            </Pie>
-                                            <Tooltip />
-                                        </PieChart>
-                                    </ResponsiveContainer>
-                                </div>
-                                <div className={style.box}>
-                                    <div className={style.title} style={{ backgroundColor: '#2F61E4' }}>
-                                        <h3>Total value per type</h3>
-                                    </div>
-                                    <ResponsiveContainer width='100%' height={320} className={style.graph}>
-                                        <PieChart >
-                                            <Pie
-                                                dataKey='value'
-                                                data={pieGraphSumPreference}
-                                                innerRadius={60}
-                                                outerRadius={100}
-                                                fill='#82ca9d'
-                                                labelLine={false}
-                                                label={pieGraphSumPreference}
-                                            >
-                                                {pieGraphSumPreference.map((entry, index) => (
-                                                    <Cell key={`cell-${index}`} fill={piesumpreferencesColors[index % piesumpreferencesColors.length]} />
-                                                ))}
-                                            </Pie>
-                                            <Tooltip />
-                                        </PieChart>
-                                    </ResponsiveContainer>
-                                </div>
-                            </div>
-                        )
-                        : (
-                            <div className={style.graphscontainer}>
-                                <div className={style.box}>
-                                    <div className={style.title} style={{ backgroundColor: '#2F61E4' }}>
-                                        <h3>Users Status</h3>
-                                    </div>
-                                    <ResponsiveContainer width='100%' height={320} className={style.graph}>
-                                        <PieChart>
-                                            <Pie
-                                                dataKey='value'
-                                                data={pieGraph}
-                                                innerRadius={0}
-                                                outerRadius={90}
-                                                fill='#82ca9d'
-                                                labelLine={false}
-                                                label={pieGraphTipo}
-                                            >
-                                                {pieGraph.map((entry, index) => (
-                                                    <Cell key={`cell-${index}`} fill={pieGraphColors[index % pieGraphColors.length]} />
-                                                ))}
-                                            </Pie>
-                                            <Tooltip />
-                                            <Legend />
-                                        </PieChart>
-                                    </ResponsiveContainer>
+        <>
+            {
 
-                                </div>
-                                <div className={style.box}>
-                                    <div className={style.title} style={{ backgroundColor: '#2F61E4' }}>
-                                        <h3>Type of Project</h3>
-                                    </div>
-                                    <ResponsiveContainer width='100%' height={320} className={style.graph}>
-                                        <PieChart >
-                                            <Pie
-                                                dataKey='value'
-                                                data={pieGraphTipo}
-                                                innerRadius={60}
-                                                outerRadius={100}
-                                                fill='#82ca9d'
-                                                labelLine={false}
-                                                label={pieGraphTipo}
-                                            >
-                                                {pieGraphTipo.map((entry, index) => (
-                                                    <Cell key={`cell-${index}`} fill={pieGraphTipoColors[index % pieGraphTipoColors.length]} />
-                                                ))}
-                                            </Pie>
-                                            <Tooltip />
-                                        </PieChart>
-                                    </ResponsiveContainer>
-                                </div>
-                                <div className={style.box}>
-                                    <div className={style.title} style={{ backgroundColor: '#2F61E4' }}>
-                                        <h3>Ratings by number of stars</h3>
-                                    </div>
-                                    <ResponsiveContainer width='100%' height={320} className={style.graph}>
-                                        <BarChart
-                                            data={barGraph}
-                                            height={200}
-                                            margin={{
-                                                top: 20,
-                                                right: 20,
-                                                left: 20,
-                                            }}
-                                        >
-                                            <XAxis dataKey='name' />
-                                            <Tooltip />
-                                            <CartesianGrid stroke="#ccc" strokeDasharray="5 5" />
-                                            <Bar dataKey='valoraciones' fill='#3F963F' barSize={50} />
-                                            <Legend />
-                                        </BarChart>
-                                    </ResponsiveContainer>
-                                </div>
-                            </div>
-                        )
-                }
-                {loading ? <div className={style.containerSpinner}><SpinnerResumen /></div> :
-                    <div className={style.adminusers}>
-                        {!itemsToEdit.length
-                            ? ''
-                            : itemsToEdit[0].type
-                                ? <div className={style.containerInfoProject}>
-                                    <p className={style.image}>Name</p>
-                                    <p className={style.name}>Type</p>
-                                    <p className={style.category}>Price</p>
-                                </div>
-                                : itemsToEdit[0].payId
-                                    ? <div className={style.containerInfo}>
-                                        <p className={style.user}>Title</p>
-                                        <p className={style.email}>Email</p>
-                                        <p>Status</p>
-                                        <p className={style.role}>Amount</p>
-                                    </div>
-                                    : itemsToEdit[0].email ?
-                                        <div className={style.containerInfo}>
-                                            <p className={style.user}>User</p>
-                                            <p className={style.email}>Email</p>
-                                            <p>Status</p>
-                                            <p className={style.role}>Role</p>
-                                        </div> : <div className={style.containerInfoProject}>
-                                            <p className={style.image}>Image</p>
-                                            <p className={style.name}>Name</p>
-                                            <p className={style.category}>Category</p>
-                                        </div>}
-
-                        <div className={style.adminCards}>
+                globalData && globalData.role === 'admin'
+                    ?
+                    <div className={style.adminWindow}>
+                        <SearchBarAdmin setItemsToEdit={setItemsToEdit} itemsToEdit={itemsToEdit} setDetailState={setDetailState} />
+                        <div className={style.containerPanel}>
                             {
-                                detailState
-                                    ? <AdminDetail
-                                        detailState={detailState}
-                                        setDetailState={setDetailState}
-                                        setItemsToEdit={setItemsToEdit}
-                                        itemsToEdit={itemsToEdit}
-                                    />
-                                    : !itemsToEdit.length
-                                        ? <div className={style.titleContaine}><h3>No se han seleccionado items</h3></div>
-                                        : itemsToEdit[0].type
-                                            ? itemsToEdit.map(item => (
-                                                <AdminItemCard
-                                                    key={item._id}
-                                                    id={item._id}
-                                                    name={item.name}
-                                                    type={item.type}
-                                                    price={item.price}
-                                                    setDetailState={setDetailState}
-                                                />
-                                            ))
-                                            : itemsToEdit[0].payId
-                                                ? itemsToEdit.map(item => (
-                                                    <AdminItemCard
-                                                        key={item._id}
-                                                        id={item._id}
-                                                        title={item.title}
-                                                        email={item.email}
-                                                        status={item.status}
-                                                        amount={item.amount}
-                                                        payId={item.payId}
-                                                        setDetailState={setDetailState}
-                                                    />
-                                                ))
-                                                : itemsToEdit[0].email
-                                                    ? itemsToEdit.map(item => (
-                                                        <AdminItemCard
-                                                            key={item._id}
-                                                            id={item._id}
-                                                            name={item.name}
-                                                            email={item.email}
-                                                            suspended={item.suspended}
-                                                            role={item.role}
-                                                            setDetailState={setDetailState}
-                                                        />
-                                                    ))
-                                                    : itemsToEdit.map(item => (
-                                                        <AdminItemCard
-                                                            key={item._id}
-                                                            id={item._id}
-                                                            name={item.name}
-                                                            images={item.images}
-                                                            category={item.category}
-                                                            setDetailState={setDetailState}
-                                                        />
-                                                    ))
+                                itemsToEdit !== undefined && itemsToEdit[0]?.preferenceId
+                                    ? (
+                                        <div className={style.graphscontainer}>
+                                            <div className={style.box}>
+                                                <div className={style.title} style={{ backgroundColor: '#2F61E4' }}>
+                                                    <h3>Total Amount</h3>
+                                                </div>
+                                                <div className={style.containerH2}>
+                                                    <p>{sumTotPreference}</p>
+                                                </div>
+                                            </div>
+                                            <div className={style.box}>
+                                                <div className={style.title} style={{ backgroundColor: '#2F61E4' }}>
+                                                    <h3>Quantity per type</h3>
+                                                </div>
+                                                <ResponsiveContainer width='100%' height={320} className={style.graph}>
+                                                    <PieChart >
+                                                        <Pie
+                                                            dataKey='quantity'
+                                                            data={pieGraphCountPreference}
+                                                            innerRadius={60}
+                                                            outerRadius={100}
+                                                            fill='#82ca9d'
+                                                            labelLine={false}
+                                                            label={pieGraphCountPreference}
+                                                        >
+                                                            {pieGraphCountPreference.map((entry, index) => (
+                                                                <Cell key={`cell-${index}`} fill={piecountpreferencesColors[index % piecountpreferencesColors.length]} />
+                                                            ))}
+                                                        </Pie>
+                                                        <Tooltip />
+                                                    </PieChart>
+                                                </ResponsiveContainer>
+                                            </div>
+                                            <div className={style.box}>
+                                                <div className={style.title} style={{ backgroundColor: '#2F61E4' }}>
+                                                    <h3>Total value per type</h3>
+                                                </div>
+                                                <ResponsiveContainer width='100%' height={320} className={style.graph}>
+                                                    <PieChart >
+                                                        <Pie
+                                                            dataKey='value'
+                                                            data={pieGraphSumPreference}
+                                                            innerRadius={60}
+                                                            outerRadius={100}
+                                                            fill='#82ca9d'
+                                                            labelLine={false}
+                                                            label={pieGraphSumPreference}
+                                                        >
+                                                            {pieGraphSumPreference.map((entry, index) => (
+                                                                <Cell key={`cell-${index}`} fill={piesumpreferencesColors[index % piesumpreferencesColors.length]} />
+                                                            ))}
+                                                        </Pie>
+                                                        <Tooltip />
+                                                    </PieChart>
+                                                </ResponsiveContainer>
+                                            </div>
+                                        </div>
+                                    )
+                                    : (
+                                        <div className={style.graphscontainer}>
+                                            <div className={style.box}>
+                                                <div className={style.title} style={{ backgroundColor: '#2F61E4' }}>
+                                                    <h3>Users Status</h3>
+                                                </div>
+                                                <ResponsiveContainer width='100%' height={320} className={style.graph}>
+                                                    <PieChart>
+                                                        <Pie
+                                                            dataKey='value'
+                                                            data={pieGraph}
+                                                            innerRadius={0}
+                                                            outerRadius={90}
+                                                            fill='#82ca9d'
+                                                            labelLine={false}
+                                                            label={pieGraphTipo}
+                                                        >
+                                                            {pieGraph.map((entry, index) => (
+                                                                <Cell key={`cell-${index}`} fill={pieGraphColors[index % pieGraphColors.length]} />
+                                                            ))}
+                                                        </Pie>
+                                                        <Tooltip />
+                                                        <Legend />
+                                                    </PieChart>
+                                                </ResponsiveContainer>
+
+                                            </div>
+                                            <div className={style.box}>
+                                                <div className={style.title} style={{ backgroundColor: '#2F61E4' }}>
+                                                    <h3>Type of Project</h3>
+                                                </div>
+                                                <ResponsiveContainer width='100%' height={320} className={style.graph}>
+                                                    <PieChart >
+                                                        <Pie
+                                                            dataKey='value'
+                                                            data={pieGraphTipo}
+                                                            innerRadius={60}
+                                                            outerRadius={100}
+                                                            fill='#82ca9d'
+                                                            labelLine={false}
+                                                            label={pieGraphTipo}
+                                                        >
+                                                            {pieGraphTipo.map((entry, index) => (
+                                                                <Cell key={`cell-${index}`} fill={pieGraphTipoColors[index % pieGraphTipoColors.length]} />
+                                                            ))}
+                                                        </Pie>
+                                                        <Tooltip />
+                                                    </PieChart>
+                                                </ResponsiveContainer>
+                                            </div>
+                                            <div className={style.box}>
+                                                <div className={style.title} style={{ backgroundColor: '#2F61E4' }}>
+                                                    <h3>Ratings by number of stars</h3>
+                                                </div>
+                                                <ResponsiveContainer width='100%' height={320} className={style.graph}>
+                                                    <BarChart
+                                                        data={barGraph}
+                                                        height={200}
+                                                        margin={{
+                                                            top: 20,
+                                                            right: 20,
+                                                            left: 20,
+                                                        }}
+                                                    >
+                                                        <XAxis dataKey='name' />
+                                                        <Tooltip />
+                                                        <CartesianGrid stroke="#ccc" strokeDasharray="5 5" />
+                                                        <Bar dataKey='valoraciones' fill='#3F963F' barSize={50} />
+                                                        <Legend />
+                                                    </BarChart>
+                                                </ResponsiveContainer>
+                                            </div>
+                                        </div>
+                                    )
                             }
+                            {loading ? <div className={style.containerSpinner}><SpinnerResumen /></div> :
+                                <div className={style.adminusers}>
+                                    {!itemsToEdit.length
+                                        ? ''
+                                        : itemsToEdit[0].type
+                                            ? <div className={style.containerInfoProject}>
+                                                <p className={style.image}>Name</p>
+                                                <p className={style.name}>Type</p>
+                                                <p className={style.category}>Price</p>
+                                            </div>
+                                            : itemsToEdit[0].preferenceId
+                                                ? <div className={style.containerInfo}>
+                                                    <p className={style.user}>Title</p>
+                                                    <p className={style.email}>Email</p>
+                                                    <p>Status</p>
+                                                    <p className={style.role}>Amount</p>
+                                                </div>
+                                                : itemsToEdit[0].email ?
+                                                    <div className={style.containerInfo}>
+                                                        <p className={style.user}>User</p>
+                                                        <p className={style.email}>Email</p>
+                                                        <p>Status</p>
+                                                        <p className={style.role}>Role</p>
+                                                    </div> : <div className={style.containerInfoProject}>
+                                                        <p className={style.image}>Image</p>
+                                                        <p className={style.name}>Name</p>
+                                                        <p className={style.category}>Category</p>
+                                                    </div>}
+
+                                    <div className={style.adminCards}>
+                                        {
+                                            detailState
+                                                ? <AdminDetail
+                                                    detailState={detailState}
+                                                    setDetailState={setDetailState}
+                                                    setItemsToEdit={setItemsToEdit}
+                                                    itemsToEdit={itemsToEdit}
+                                                />
+                                                : !itemsToEdit.length
+                                                    ? <div className={style.titleContaine}><h3>No se han seleccionado items</h3></div>
+                                                    : itemsToEdit[0].type
+                                                        ? itemsToEdit.map(item => (
+                                                            <AdminItemCard
+                                                                key={item._id}
+                                                                id={item._id}
+                                                                name={item.name}
+                                                                type={item.type}
+                                                                price={item.price}
+                                                                setDetailState={setDetailState}
+                                                            />
+                                                        ))
+                                                        : itemsToEdit[0].preferenceId
+                                                            ? itemsToEdit.map(item => (
+                                                                <AdminItemCard
+                                                                    key={item._id}
+                                                                    id={item._id}
+                                                                    title={item.title}
+                                                                    email={item.email}
+                                                                    status={item.status}
+                                                                    amount={item.amount}
+                                                                    payId={item.payId}
+                                                                    preferenceId={item.preferenceId}
+                                                                    setDetailState={setDetailState}
+                                                                />
+                                                            ))
+                                                            : itemsToEdit[0].email
+                                                                ? itemsToEdit.map(item => (
+                                                                    <AdminItemCard
+                                                                        key={item._id}
+                                                                        id={item._id}
+                                                                        name={item.name}
+                                                                        email={item.email}
+                                                                        suspended={item.suspended}
+                                                                        role={item.role}
+                                                                        setDetailState={setDetailState}
+                                                                    />
+                                                                ))
+                                                                : itemsToEdit.map(item => (
+                                                                    <AdminItemCard
+                                                                        key={item._id}
+                                                                        id={item._id}
+                                                                        name={item.name}
+                                                                        images={item.images}
+                                                                        category={item.category}
+                                                                        setDetailState={setDetailState}
+                                                                    />
+                                                                ))
+                                        }
+                                    </div>
+                                </div>}
                         </div>
-                    </div>}
-            </div>
-        </div>
+                    </div>
+                    : <NotFound />
+            }
+        </>
     )
 }
 export default AdminWindow

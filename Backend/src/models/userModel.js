@@ -27,8 +27,8 @@ const userSchema = new Schema({
     default: false,
   },
   preference: {
-     type: Object,
-     default: {}
+    type: Object,
+    default: {}
   },
   createdAt: {
     type: Date,

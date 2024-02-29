@@ -8,31 +8,31 @@ export default function AdminItemCard(props) {
 
     const handleClick = async () => {
         if (props.type) props.setDetailState({ id: props.id, type: props.type })
-        else if (props.payId) props.setDetailState({ payId: props.payId, id: props.id })
+        else if (props.preferenceId) props.setDetailState({ payId: props.payId, id: props.id })
         else if (props.email) props.setDetailState(props.email)
         else props.setDetailState(props.id)
     }
 
     return (
-        
+
         <NavLink onClick={handleClick}>
             <div className={style.card} >
                 {
                     props.type
                         ? (
                             <div className={style.type}>
-                                <p style={{textAlign:'start'}}className={style.user}>{props.name}</p>
+                                <p style={{ textAlign: 'start' }} className={style.user}>{props.name}</p>
                                 <p className={style.email}>{props.type}</p>
-                                <p style={{textAlign:'end'}} className={style.role}>{props.price}</p>
+                                <p style={{ textAlign: 'end' }} className={style.role}>{props.price}</p>
                             </div>
                         )
                         :
-                        props.payId
+                        props.preferenceId
                             ? (
                                 <div className={style.containerInfo}>
                                     <p className={style.user}>{props.title}</p>
                                     <p className={style.email}>{props.email}</p>
-                                    <p className={style.status} style={props.status === "approved" ? { color: 'red' } : { color: 'forestgreen' }}>{props.status === "approved" ? <IoMdCloseCircle /> : <FaCheck />}</p>
+                                    <p className={style.status} style={props.status === "approved" ? { color: 'forestgreen' } : { color: 'red' }}>{props.status === "approved" ? <IoMdCloseCircle /> : <FaCheck />}</p>
                                     <p className={style.role}>{props.amount}</p>
                                 </div>
                             )

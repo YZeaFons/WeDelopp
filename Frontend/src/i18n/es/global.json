@@ -9,7 +9,6 @@
     "ContactUs": "Contactanos",
     "Language": "idioma"
   },
-
   "Header": {
     "title": "Si puedes imaginarlo, nosotros podemos desarrollarlo",
     "change": {
@@ -19,7 +18,6 @@
       "word4": "construirlo."
     }
   },
-
   "LoginButton": {
     "title": "Iniciar Sesion",
     "register": "Registrarse",
@@ -27,19 +25,16 @@
     "bannedAlertContact": "Soporte de contacto",
     "bannedWhy": "¿Por qué tengo este problema?"
   },
-
   "UserAccount": {
     "role": "Rol",
     "creationDate": "Fecha de creacion de la cuenta",
     "SignOut": "Desconectarse",
     "adminPanel": "Panel de administrador"
   },
-
   "AboutUs": {
     "title": "Sobre nosotros",
     "description": "En WeDevelop, no solo creamos sitios web, también tejemos historias digitales. Desde nuestros modestos comienzos en 2022, nos hemos dedicado con pasión a crear experiencias en línea excepcionales que cautivan, inspiran y conectan."
   },
-
   "WhyWedevelop": {
     "title": "¿Por que WeDevelop?",
     "section1": {
@@ -67,17 +62,14 @@
       "description": "Priorizamos la eficiencia en cada fase de nuestro trabajo. Desde la planificación hasta la ejecución, nuestros procesos optimizados garantizan resultados rápidos y precisos, entregando proyectos de alta calidad en un tiempo récord."
     }
   },
-
   "Highlights": {
     "title": "Destacados",
     "ProjectsButton": "Ver Todos Los Proyectos"
   },
-
   "QuoteHome": {
     "title": "¡Calcula tu Presupuesto al Instante!",
     "button": "Cotizar Ahora"
   },
-
   "RatingHome": {
     "rating": "Calificación",
     "comments": "reseñas Totales",
@@ -109,7 +101,6 @@
       "noReviewsStar": "No se encontraron reseñas con esa calificación."
     }
   },
-
   "Footer": {
     "bydeveloper": "By developers",
     "Navigation": {
@@ -127,7 +118,6 @@
     },
     "Copyright": "©WeDevelop Todos Los Derechos Reservados 2024"
   },
-
   "QuoteQuestions": {
     "Section1": "¿Cuál será el propósito de su proyecto?",
     "Section2": {
@@ -203,10 +193,7 @@
       "plans": "Seleccionar Plan"
     }
   },
-
-
-
-  "plansTitle":{
+  "plansTitle": {
     "title": "Planes y Precios",
     "subtitle": "Elija el plan adecuado para su sitio web y nosotros lo desarrollaremos"
   },
@@ -269,7 +256,6 @@
       "button": "Comenzar"
     }
   },
-
   "PayStatus": {
     "title": "Estado del pago",
     "number": "Número de pago:",
@@ -280,7 +266,6 @@
     "email": "Correo electrónico:",
     "backHome": "Volver a inicio"
   },
-
   "ContactUsPage": {
     "alert": {
       "title": "¡Su mensaje ha sido enviado!",
@@ -293,7 +278,6 @@
     "description": "Escribe tu mensaje aqui...",
     "submit": "Enviar"
   },
-
   "Projects": {
     "notFound": "Proyecto no encontrado",
     "cards": "Categoria:",
@@ -329,7 +313,6 @@
       }
     }
   },
-
   "NotFoundPage": {
     "part1": "404 - Pagina no encontrada",
     "part2": "Puede que estés aquí porque:",
