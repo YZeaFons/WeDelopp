@@ -4,12 +4,12 @@ const { createPreference } = require("../services/preferenceService");
 // Agrega credenciales
 const client = new MercadoPagoConfig({
   accessToken:
-  'TEST-8044533475948845-022019-af21cd73911e2e5a0a21744664b0fe4a-142403819'
+    'TEST-8044533475948845-022019-af21cd73911e2e5a0a21744664b0fe4a-142403819'
 });
 const postPreference = async (req, res) => {
   try {
     const { title, price, quantity, quote, email } = req.body
-    
+
     const body = {
       items: [
         {
@@ -20,16 +20,16 @@ const postPreference = async (req, res) => {
         },
       ],
       back_urls: {
-        success: "https://wedevelop.vercel.app/successpayment",
-        failure: "https://wedevelop.vercel.app/successpayment",
-        pending: "https://wedevelop.vercel.app/successpayment",
+        success: "https://we-delopp.vercel.app/successpayment",
+        failure: "https://we-delopp.vercel.app/successpayment",
+        pending: "https://we-delopp.vercel.app/successpayment",
       },
       auto_return: "approved",
       additional_info: quote
     };
-    
+
     const preference = new Preference(client);
-    
+
     try {
       const result = await preference.create({ body });
       const newObj = {
@@ -41,7 +41,7 @@ const postPreference = async (req, res) => {
       }
 
       const newPreferenceBD = await createPreference(newObj)
-      
+
       res.status(200).json({ id: result.id });
     } catch (error) {
       console.log(error.message)
